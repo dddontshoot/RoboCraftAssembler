@@ -1,0 +1,147 @@
+# Cube Name,ID Number,Blend file,
+T1 Cube Medium ,227205318,Compact_Cube.blend,Sim_0
+T1 Edge Medium ,227917916,Compact_Edge.blend,Sim_0
+T1 Corner Medium ,1931676396,Compact_Corner.blend,Sim_0
+T1 Inner Medium ,3559488176,Compact_Inner.blend,Sim_0
+T1 Edge Round Medium ,447126572,Compact_Edge_Round.blend,Sim_0
+T1 Corner Round Medium ,2589418111,Compact_Corner_Round.blend,Sim_0
+T1 Inner Round Medium ,1837286858,Compact_Inner_Round.blend,Sim_0
+T1 Edge Slope Medium ,1538778047,Compact_Edge_Slope.blend,Sim_0
+T1 Corner Slope Medium ,557016830,Compact_Corner_Slope.blend,Sim_0
+T1 Inner Slope Medium ,495400745,Compact_Inner_Slope.blend,Sim_0
+T1 Cone Medium ,1352234106,Compact_Cone.blend,Sim_0
+T1 Pyramid Medium ,2686602224,Compact_Pyramid.blend,Sim_0
+#,,,
+T1 Cube Heavy ,123901970,Compact_Cube.blend,Sim_0
+T1 Edge Heavy ,1225928721,Compact_Edge.blend,Sim_0
+T1 Corner Heavy ,222074329,Compact_Corner.blend,Sim_0
+T1 Inner Heavy ,2577871627,Compact_Inner.blend,Sim_0
+T1 Edge Round Heavy ,368051733,Compact_Edge_Round.blend,Sim_0
+T1 Corner Round Heavy ,2148353926,Compact_Corner_Round.blend,Sim_0
+T1 Inner Round Heavy ,665761850,Compact_Inner_Round.blend,Sim_0
+T1 Edge Slope Heavy ,1334508924,Compact_Edge_Slope.blend,Sim_0
+T1 Corner Slope Heavy ,3665280239,Compact_Corner_Slope.blend,Sim_0
+T1 Inner Slope Heavy ,2111062867,Compact_Inner_Slope.blend,Sim_0
+T1 Cone Heavy ,3886136035,Compact_Cone.blend,Sim_0
+T1 Pyramid Heavy ,4184274974,Compact_Pyramid.blend,Sim_0
+#,,,
+T1 Cube Light ,1972224393,Compact_Cube.blend,Sim_0
+T1 Edge Light ,4157111053,Compact_Edge.blend,Sim_0
+T1 Corner Light ,1347255791,Compact_Corner.blend,Sim_0
+T1 Inner Light ,1941682825,Compact_Inner.blend,Sim_0
+T1 Edge Round Light ,1993583577,Compact_Edge_Round.blend,Sim_0
+T1 Corner Round Light ,582052348,Compact_Corner_Round.blend,Sim_0
+T1 Inner Round Light ,1578378954,Compact_Inner_Round.blend,Sim_0
+T1 Edge Slope Light ,3093572869,Compact_Edge_Slope.blend,Sim_0
+T1 Corner Slope Light ,3959877408,Compact_Corner_Slope.blend,Sim_0
+T1 Inner Slope Light ,2426642454,Compact_Inner_Slope.blend,Sim_0
+T1 Cone Light ,1422041599,Compact_Cone.blend,Sim_0
+T1 Pyramid Light ,885415789,Compact_Pyramid.blend,Sim_0
+#,,,
+T5 Cube Compact ,1576857358,Compact_Cube.blend,Sim_0
+T5 Edge Compact ,327960333,Compact_Edge.blend,Sim_0
+T5 Corner Compact ,126353766,Compact_Corner.blend,Sim_0
+T5 Inner Compact ,2378018821,Compact_Inner.blend,Sim_0
+T5 Edge Round Compact ,676446887,Compact_Edge_Round.blend,Sim_0
+T5 Corner Round Compact ,1728084091,Compact_Corner_Round.blend,Sim_0
+T5 Inner Round Compact ,925214026,Compact_Inner_Round.blend,Sim_0
+T5 Edge Slope Compact ,1915435470,Compact_Edge_Slope.blend,Sim_0
+T5 Corner Slope Compact ,1881278783,Compact_Corner_Slope.blend,Sim_0
+T5 Inner Slope Compact ,1834966563,Compact_Inner_Slope.blend,Sim_0
+T5 Cone Compact ,1979640496,Compact_Cone.blend,Sim_0
+T5 Pyramid Compact ,979123471,Compact_Pyramid.blend,Sim_0
+#,,,
+Glass Cube ,3327812742,Compact_Cube.blend,Sim_0
+Glass Edge ,4235300269,Compact_Edge.blend,Sim_0
+Glass Corner ,1094997616,Compact_Corner.blend,Sim_0
+Glass Inner ,445857183,Compact_Inner.blend,Sim_0
+Glass Edge Round ,3629216992,Compact_Edge_Round.blend,Sim_0
+Glass Corner Round ,2380494106,Compact_Corner_Round.blend,Sim_0
+Glass Inner Round ,3066776961,Compact_Inner_Round.blend,Sim_0
+Glass Edge Slope ,,Compact_Edge_Slope.blend,Sim_0
+Glass Corner Slope ,,Compact_Corner_Slope.blend,Sim_0
+Glass Inner Slope ,,Compact_Inner_Slope.blend,Sim_0
+Glass Cone ,,Compact_Cone.blend,Sim_0
+Glass Pyramid ,,Compact_Pyramid.blend,Sim_0
+#,,,
+T1 Retro Cube  ,183067052,Compact_Cube.blend,Sim_0
+Helium,3226650954,Compact_Cube.blend,Sim_0
+#,,,
+T0 Mech Leg  ,3066502430,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
+T1 Mech Leg  ,76192516,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
+T2 Mech Leg  ,1789991181,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
+T3 Mech Leg  ,1611765553,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
+T4 Mech Leg  ,2452579137,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
+#,,,
+#,,,
+#,,,hips,thigh,thigh electroshield,shin (no electroshield),foot (like a cats foot, they only stand on toes),foot electroshield panels,toes,Electroplate panels
+T5 Mech Leg  ,4140335767,T5_Mech_Leg_Steam.blend,base_0.001=ColourOveride=1,leg1_0.001=ColourOveride=1,leg1_1.001,leg2_0.001,leg3_0.001=ColourOveride=1,leg3_1.001,foot_0.001,foot_1.001
+#,,,
+T3 Sprinter Leg  ,3345472872,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
+T4 Sprinter Leg  ,1169080311,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
+#,,,
+T0 Hovers  ,1851713730,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
+T1 Hovers  ,3170960304,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
+T2 Hovers  ,1639979618,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
+T3 Hovers  ,465491285,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
+T4 Hovers  ,3347041415,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
+T5 Hovers  ,3835205776,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
+Hovers Goldern,2217471839,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
+#,,,
+T2 Wing  ,3980928804,Wing.blend,DrawCall_2.001,DrawCall_3.001
+T3 Wing  ,2205394221,Wing.blend,DrawCall_2.001,DrawCall_3.001
+T4 Wing  ,2312317713,Wing.blend,DrawCall_2.001,DrawCall_3.001
+T5 Wing  ,2464192350,Wing.blend,DrawCall_2.001,DrawCall_3.001
+#,,,
+T0 Front Laser  ,3402350870,T1 Blaster.blend,DrawCall_15
+T1 Front Laser  ,2494440442,T1 Blaster.blend,DrawCall_15
+T2 Front Laser  ,1584562849,T1 Blaster.blend,DrawCall_15
+T3 Front Laser  ,2675516967,T1 Blaster.blend,DrawCall_15
+T4 Front Laser  ,1436911484,T1 Blaster.blend,DrawCall_15
+T0 Laser  ,3809895395,T1 Blaster.blend,DrawCall_15
+T1 Laser  ,3178463503,T1 Blaster.blend,DrawCall_15
+T2 Laser  ,2007965780,T1 Blaster.blend,DrawCall_15
+T3 Laser  ,3064235218,T1 Blaster.blend,DrawCall_15
+T4 Laser  ,2088248713,T1 Blaster.blend,DrawCall_15
+T5 Laser  ,3209000021,RC_TX_SMG_1.blend,RC_SMG_TX1_0,RC_SMG_TX1_Arm_0,RC_SMG_TX1_Barrel_0,RC_SMG_TX1_Muzzle_0
+T5 Laser (Gold),3851710054,RC_TX_SMG_1.blend,RC_SMG_TX1_0,RC_SMG_TX1_Arm_0,RC_SMG_TX1_Barrel_0,RC_SMG_TX1_Muzzle_0
+#,,,
+T0 Plasma  ,2655409492,T1 Blaster.blend,DrawCall_15
+T1 Plasma  ,1293532710,T1 Blaster.blend,DrawCall_15
+T2 Plasma  ,2446895092,T1 Blaster.blend,DrawCall_15
+T3 Plasma  ,3953551555,T1 Blaster.blend,DrawCall_15
+T4 Plasma  ,929526033,T1 Blaster.blend,DrawCall_15
+T5 Plasma  ,171448327,RC_TX_SMG_1.blend,RC_SMG_TX1_0,RC_SMG_TX1_Arm_0,RC_SMG_TX1_Barrel_0,RC_SMG_TX1_Muzzle_0
+#,,,
+T1 Rail  ,1640043587,T1 Blaster.blend,DrawCall_15
+T2 Rail  ,2870850840,T1 Blaster.blend,DrawCall_15
+T3 Rail  ,1779831198,T1 Blaster.blend,DrawCall_15
+T4 Rail  ,2697638085,T1 Blaster.blend,DrawCall_15
+T5 Rail  ,2083340214,T1 Blaster.blend,DrawCall_15
+#,,,
+T2 Nano  ,1761903423,T1 Blaster.blend,DrawCall_15
+T3 Nano  ,1671695619,T1 Blaster.blend,DrawCall_15
+T4 Nano  ,2364175165,T1 Blaster.blend,DrawCall_15
+#,,,
+T3 Seeker  ,48150119,T1 Blaster.blend,DrawCall_15
+T4 Seeker  ,350778877,T1 Blaster.blend,DrawCall_15
+T5 Seeker  ,2419806013,T1 Blaster.blend,DrawCall_15
+#,,,
+T4 Flak  ,3947892032,T1 Blaster.blend,DrawCall_15
+T5 Flak  ,73607413,T1 Blaster.blend,DrawCall_15
+#,,,
+T4 Ion  ,3541341953,T1 Blaster.blend,
+T5 Ion  ,1184153980,T1 Blaster.blend,
+#,,,
+T5 Mortar  ,1885850433,T1 Blaster.blend,
+#,,,
+#,,,Very large deep corner shield
+T5 Electroshield B Left  ,3001609712,RC_MegaPlate_TX1A_L.blend,MegaPlate_TX1A_L_0=ColourOveride=1,MegaPlate_TX1A_L_1,MegaPlate_TX1A_L_2=ColourOveride=1
+T5 Electroshield B Right  ,3365106304,RC_MegaPlate_TX1A_R.blend,MegaPlate_TX1A_R_0=ColourOveride=1,MegaPlate_TX1A_R_1,MegaPlate_TX1A_R_2=ColourOveride=1
+#,,,(Logo Face),(Electroshield),(Back)
+,,,
+#,,,Massive flat long rectangular shield
+T5 Electroshield C Left  ,991790322,RC_MegaPlate_TX1B_L.blend,MegaPlate_TX1B_L_0=ColourOveride=1,MegaPlate_TX1B_L_1,MegaPlate_TX1B_L_2=ColourOveride=1
+T5 Electroshield C Right  ,1097210754,RC_MegaPlate_TX1B_R.blend,MegaPlate_TX1B_R_0=ColourOveride=1,MegaPlate_TX1B_R_1,MegaPlate_TX1B_R_2=ColourOveride=1
+#,,,(Logo Face),(Electroshield),(Back)
+#

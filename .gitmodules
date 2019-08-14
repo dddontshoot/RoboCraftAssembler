@@ -1,0 +1,3 @@
+[submodule "rcbup"]
+	path = rcbup
+	url = https://github.com/NGnius/rcbup

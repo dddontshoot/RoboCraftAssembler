@@ -1,3 +1,6 @@
+# Robocraft Assembler
+
+
 Hello everyone, and welcome to the RoboCraftAssembler written by dddontshoot, and based on bots downloaded using NGnius's python bot downloader, which can be found here https://github.com/NGnius/rcbup
 I have included the bot downloader in this archive, but if there are more recent versions, they can be found on github.
 
@@ -8,12 +11,24 @@ These tools can be used to
 
 
 
-List of improvements:
+## Requirements:
 
-0.3.3
+Blender - I'm using 2.7.9b (https://download.blender.org/release/Blender2.79)
+
+Python - I'm using 3.6.8
+
+
+For context, I tested this on my laptop which uses blender 2.7.6 and python 3.5.2 and it fails miserably when trying to import objects.
+
+
+
+
+## List of improvements:
+
+### 0.3.3
 - Same features as 0.3.2, but the code has been broken up into modules
 
-0.3.2
+### 0.3.2
 New Features:
 - The code no longer relies on the prefab blender objects located on layer 2. It was only using them to store the colour information, which has now been embedded in the code.
   It is because of this that I no longer need to embed the code inside a blender file. You can import the code into an empty blender file yourself. It would be nice to run it from the command line terminal, but its clunky and there's still a few bugs to iron out first.
@@ -30,39 +45,21 @@ Boring code stuff that I changed:
 - Added a deselecter subroutine
 - Attempted and failed to delete the default cube
 
-0.3
+### 0.3
 - Textures are included in each library, there are some more in a folder called "Textures"
 - Duplication. Each cube type is imported once, then stored as a datum which is duplicated for every cube of that type in the bot. The datums are then removed at the end of the script.
 - ColourOveride. You might notice some random looking characters in the csv file. Until I figure out how to do persistant colours properly in blender (I know it's possible, I stumbled onto it) those objects that are designed to not change colour, have been flagged in the csv file.
 - A handful of new cubes (T5 laser, the two largest electroshields, full set of compact cubes, T5 Hover, T5 Mech Leg)
 - Scale is now 100%, the previous version was 25%
 
-0.1 First version
+### 0.1 First version
 - Very basic :-)
-
-
-
-Requirements:
-
-Blender - I'm using 2.7.9b
-Python - I'm using 3.6.8
-
-For context, I tested this on my laptop which uses blender 2.7.6 and python 3.5.2 and it fails miserably when trying to import objects.
-
-
-
-
-
 
 We all got a bit of a scare when FreeJam announced that it wouldn't be releasing any more updates for RoboCraft, we're hoping it doesn't mean RoboCrafts days are numbered because we love playing it, but in case they decide to pull the plug, we want to at least keep our bots that we spent hours building.
 Which is why we're working on this RoboCraftAssembler project, once you have your bot saved in blender you could print it out and put it on your desk, the hood of your car, or use it in a roleplaying game or whatever you want really.
 
 
-
-
-
-And here's what you need to know to do it:
-
+#### And here's what you need to know to do it:
 Version 0.3.2 and 0.3.3
 1) Open a blank Blender document
 
@@ -75,7 +72,7 @@ Version 0.3.2 and 0.3.3
 5) finally, blender gets confused when importing external textures. So click on file > External Data > Find Missing Files and point it to the subfolder called "Textures"
 
 
-Version 0.3
+### Version 0.3
 1) once you have downloaded your bot file, put it in the same folder as the RoboCraftAssembler
 
 2) open RoboCraftAssembler0.3.blend in blender
@@ -91,7 +88,8 @@ Version 0.3
 
 
 
-Notes regarding cubes
+
+## Notes regarding cubes
 At the moment we're still extracting all the complex 3D models for each cube type.
 We did all the basic ones first, T1-Medium-Cube, T1-Edge-Medium, etc, but we still don't have any round cubes or and guns or wings or rotors or anything really cool like that.
 Just the basic cubes.
@@ -101,5 +99,6 @@ The csv file does contain some substitutions. For example, there's no library fo
 
 The good news is that should you aquire some new 3D models, you (hopefully) won't have to change your code to include them, just update cubes.csv with the names of the new blend libraries and the RoboCraftAssembler will import them when you run the script.
 
-Happy gaming everyone.
-- dddontshoot
+### Happy gaming everyone.
+**- dddontshoot**
+

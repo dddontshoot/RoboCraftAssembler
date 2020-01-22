@@ -377,7 +377,6 @@ def main(botfile):
 
 
     unselecteverything.go() # lets unselect everything so that we don't get any pre-existing cubes duplicated
-    unselecteverything.deletethecube()  # this doesn't actually work!
 
     
     #########################################################

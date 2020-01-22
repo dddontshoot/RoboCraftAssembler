@@ -26,7 +26,7 @@ For context, I tested this on my laptop which uses blender 2.7.6 and python 3.5.
 ## List of improvements:
 
 ### 0.3.5
-- Command line support (even tho' we still haven't figured out the best way to stop the default cube from contaminating our bots)
+- Command line support ~~(even tho' we still haven't figured out the best way to stop the default cube from contaminating our bots)~~ Solved it!
 - Modules are now in separate files
 - filename change from RoboCraftAssembler0.3.3.py to assembler.py
 

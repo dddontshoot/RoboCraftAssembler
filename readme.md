@@ -64,8 +64,16 @@ We all got a bit of a scare when FreeJam announced that it wouldn't be releasing
 Which is why we're working on this RoboCraftAssembler project, once you have your bot saved in blender you could print it out and put it on your desk, the hood of your car, or use it in a roleplaying game or whatever you want really.
 
 
-#### And here's what you need to know to do it:
-Version 0.3.2 and 0.3.3
+# And here's what you need to know to do it:
+# Version 0.3.5
+1) Download your bot file, put it in the same folder as the RoboCraftAssembler
+
+2) Run it using the command line:
+   blender --python assembler.py -- TheDistractingCicada.bot
+   
+It's that simple!
+   
+# Version 0.3.2 and 0.3.3
 1) Open a blank Blender document
 
 2) Find the text editor inside blender, and use it to open RoboCraftAssembler0.3.3.py
@@ -77,7 +85,7 @@ Version 0.3.2 and 0.3.3
 5) finally, blender gets confused when importing external textures. So click on file > External Data > Find Missing Files and point it to the subfolder called "Textures"
 
 
-### Version 0.3
+# Version 0.3
 1) once you have downloaded your bot file, put it in the same folder as the RoboCraftAssembler
 
 2) open RoboCraftAssembler0.3.blend in blender

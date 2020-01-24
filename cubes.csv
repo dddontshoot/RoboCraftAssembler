@@ -1,18 +1,65 @@
-# Cube Name,ID Number,Blend file,
+# RC15 Cube Name \ RC14 Cube Name,ID Number,Blend file
+#
 Placeholder for cubes I've never seen before,Spotter-Mace-0000,Spotter-Mace-1.blend,Mace
-T1 Cube Medium ,227205318,Compact_Cube.blend,Sim_0
-T1 Edge Medium ,227917916,Compact_Edge.blend,Sim_0
-T1 Corner Medium ,1931676396,Compact_Corner.blend,Sim_0
-T1 Inner Medium ,3559488176,Compact_Inner.blend,Sim_0
-T1 Edge Round Medium ,447126572,Compact_Edge_Round.blend,Sim_0
-T1 Corner Round Medium ,2589418111,Compact_Corner_Round.blend,Sim_0
-T1 Inner Round Medium ,1837286858,Compact_Inner_Round.blend,Sim_0
-T1 Edge Slope Medium ,1538778047,Compact_Edge_Slope.blend,Sim_0
-T1 Corner Slope Medium ,557016830,Compact_Corner_Slope.blend,Sim_0
-T1 Inner Slope Medium ,495400745,Compact_Inner_Slope.blend,Sim_0
-T1 Cone Medium ,1352234106,Compact_Cone.blend,Sim_0
-T1 Pyramid Medium ,2686602224,Compact_Pyramid.blend,Sim_0
-#,,,
+#
+ \ Armored Cube T1,3795589065,Medium_Cube.blend,Sim_0
+ \ Armored Cube T2,3523011797,Medium_Cube.blend,Sim_0
+ \ Armored Cube T3,1428281037,Medium_Cube.blend,Sim_0
+ \ Armored Cube T4,148547544,Medium_Cube.blend,Sim_0
+ \ Armored Cube T5,3902577141,Medium_Cube.blend,Sim_0
+ \ Armored Cube T6,3217516252,Medium_Cube.blend,Sim_0
+ \ Armored Cube T7,1602312433,Medium_Cube.blend,Sim_0
+ \ Armored Cube T8,3130466754,Medium_Cube.blend,Sim_0
+ \ Armored Cube T9,936473914,Medium_Cube.blend,Sim_0
+#
+ \ Armored Inner T1,1661086464,Medium_Inner.blend,Sim_0
+ \ Armored Inner T2,140476067,Medium_Inner.blend,Sim_0
+ \ Armored Inner T3,3558861316,Medium_Inner.blend,Sim_0
+ \ Armored Inner T4,3514383790,Medium_Inner.blend,Sim_0
+ \ Armored Inner T5,1772266812,Medium_Inner.blend,Sim_0
+ \ Armored Inner T6,1717894314,Medium_Inner.blend,Sim_0
+ \ Armored Inner T7,3737084984,Medium_Inner.blend,Sim_0
+ \ Armored Inner T8,1664400308,Medium_Inner.blend,Sim_0
+ \ Armored Inner T9,2704279673,Medium_Inner.blend,Sim_0
+#
+ \ Armored Prism T1,3133051372,Medium_Edge.blend,Sim_0.001
+ \ Armored Prism T2,3521365071,Medium_Edge.blend,Sim_0.001
+ \ Armored Prism T3,228806888,Medium_Edge.blend,Sim_0.001
+ \ Armored Prism T4,147162946,Medium_Edge.blend,Sim_0.001
+ \ Armored Prism T5,2954764240,Medium_Edge.blend,Sim_0.001
+ \ Armored Prism T6,3218622022,Medium_Edge.blend,Sim_0.001
+ \ Armored Prism T7,117694164,Medium_Edge.blend,Sim_0.001
+ \ Armored Prism T8,3129475416,Medium_Edge.blend,Sim_0.001
+ \ Armored Prism T9,3159626035,Medium_Edge.blend,Sim_0.001
+#
+ \ Armored Tetra T1,3288882012,Medium_Corner.blend,Sim_0
+ \ Armored Tetra T2,2941587199,Medium_Corner.blend,Sim_0
+ \ Armored Tetra T3,1930795608,Medium_Corner.blend,Sim_0
+ \ Armored Tetra T4,1987268082,Medium_Corner.blend,Sim_0
+ \ Armored Tetra T5,3467171168,Medium_Corner.blend,Sim_0
+ \ Armored Tetra T6,3245247734,Medium_Corner.blend,Sim_0
+ \ Armored Tetra T7,2041910372,Medium_Corner.blend,Sim_0
+ \ Armored Tetra T8,3292449768,Medium_Corner.blend,Sim_0
+ \ Armored Tetra T9,3265763652,Medium_Corner.blend,Sim_0
+#
+T1 Cube Medium  \ Armored Cube T10,227205318,Medium_Cube.blend,Sim_0
+T1 Edge Medium  \ Armored Prism T10,227917916,Medium_Edge.blend,Sim_0.001
+T1 Corner Medium  \ Armored Tetra T10,1931676396,Medium_Corner.blend,Sim_0
+T1 Inner Medium  \ Armored Inner T10,3559488176,Medium_Inner.blend,Sim_0
+T1 Edge Round Medium ,447126572,Medium_Edge_Round.blend,Sim_0
+T1 Corner Round Medium ,2589418111,Medium_Corner_Round.blend,Sim_0
+T1 Inner Round Medium ,1837286858,Medium_Inner_Round.blend,Sim_0
+T1 Edge Slope Medium ,1538778047,Medium_Edge_Slope.blend,Sim_0
+T1 Corner Slope Medium ,557016830,Medium_Corner_Slope.blend,Sim_0
+T1 Inner Slope Medium ,495400745,Medium_Inner_Slope.blend,Sim_0
+T1 Cone Medium ,1352234106,Medium_Cone.blend,Sim_0
+T1 Pyramid Medium ,2686602224,Medium_Pyramid.blend,Sim_0
+#
+ \ Heavy Chassis Cube,1654632428,Compact_Cube.blend,Sim_0
+ \ Heavy Chassis Inner,4181414569,Compact_Inner.blend,Sim_0
+ \ Heavy Chassis Prism,2686466102,Compact_Edge.blend,Sim_0
+ \ Heavy Chassis Tetra,2157492751,Compact_Corner.blend,Sim_0
+#
 T1 Cube Heavy ,123901970,Compact_Cube.blend,Sim_0
 T1 Edge Heavy ,1225928721,Compact_Edge.blend,Sim_0
 T1 Corner Heavy ,222074329,Compact_Corner.blend,Sim_0
@@ -24,8 +71,13 @@ T1 Edge Slope Heavy ,1334508924,Compact_Edge_Slope.blend,Sim_0
 T1 Corner Slope Heavy ,3665280239,Compact_Corner_Slope.blend,Sim_0
 T1 Inner Slope Heavy ,2111062867,Compact_Inner_Slope.blend,Sim_0
 T1 Cone Heavy ,3886136035,Compact_Cone.blend,Sim_0
-T1 Pyramid Heavy ,4184274974,Compact_Pyramid.blend,Sim_0
-#,,,
+T1 Pyramid Heavy,4184274974,Compact_Pyramid.blend,Sim_0
+#
+ \ Light Chassis Cube,2295832800,Compact_Cube.blend,Sim_0
+ \ Light Chassis Inner,3920646105,Compact_Inner.blend,Sim_0
+ \ Light Chassis Prism,2231909735,Compact_Edge.blend,Sim_0
+ \ Light Chassis Tetra,1754827363,Compact_Corner.blend,Sim_0
+#
 T1 Cube Light ,1972224393,Compact_Cube.blend,Sim_0
 T1 Edge Light ,4157111053,Compact_Edge.blend,Sim_0
 T1 Corner Light ,1347255791,Compact_Corner.blend,Sim_0
@@ -38,7 +90,7 @@ T1 Corner Slope Light ,3959877408,Compact_Corner_Slope.blend,Sim_0
 T1 Inner Slope Light ,2426642454,Compact_Inner_Slope.blend,Sim_0
 T1 Cone Light ,1422041599,Compact_Cone.blend,Sim_0
 T1 Pyramid Light ,885415789,Compact_Pyramid.blend,Sim_0
-#,,,
+#
 T5 Cube Compact ,1576857358,Compact_Cube.blend,Sim_0
 T5 Edge Compact ,327960333,Compact_Edge.blend,Sim_0
 T5 Corner Compact ,126353766,Compact_Corner.blend,Sim_0
@@ -51,98 +103,464 @@ T5 Corner Slope Compact ,1881278783,Compact_Corner_Slope.blend,Sim_0
 T5 Inner Slope Compact ,1834966563,Compact_Inner_Slope.blend,Sim_0
 T5 Cone Compact ,1979640496,Compact_Cone.blend,Sim_0
 T5 Pyramid Compact ,979123471,Compact_Pyramid.blend,Sim_0
-#,,,
-Glass Cube ,3327812742,Compact_Cube.blend,Sim_0
-Glass Edge ,4235300269,Compact_Edge.blend,Sim_0
-Glass Corner ,1094997616,Compact_Corner.blend,Sim_0
-Glass Inner ,445857183,Compact_Inner.blend,Sim_0
+#
+Glass Cube  \ Windshield Cube,3327812742,Compact_Cube.blend,Sim_0
+Glass Edge  \ Windshield Prism,4235300269,Compact_Edge.blend,Sim_0
+Glass Corner  \ Windshield Tetra,1094997616,Compact_Corner.blend,Sim_0
+Glass Inner  \ Windshield Inner,445857183,Compact_Inner.blend,Sim_0
 Glass Edge Round ,3629216992,Compact_Edge_Round.blend,Sim_0
 Glass Corner Round ,2380494106,Compact_Corner_Round.blend,Sim_0
 Glass Inner Round ,3066776961,Compact_Inner_Round.blend,Sim_0
-Glass Edge Slope ,,Compact_Edge_Slope.blend,Sim_0
-Glass Corner Slope ,,Compact_Corner_Slope.blend,Sim_0
-Glass Inner Slope ,,Compact_Inner_Slope.blend,Sim_0
-Glass Cone ,,Compact_Cone.blend,Sim_0
-Glass Pyramid ,,Compact_Pyramid.blend,Sim_0
-#,,,
-T1 Retro Cube  ,183067052,Compact_Cube.blend,Sim_0
-Helium,3226650954,Compact_Cube.blend,Sim_0
-#,,,
-T0 Mech Leg  ,3066502430,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
-T1 Mech Leg  ,76192516,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
-T2 Mech Leg  ,1789991181,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
-T3 Mech Leg  ,1611765553,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
-T4 Mech Leg  ,2452579137,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
-#,,,
-#,,,
-#,,,hips,thigh,thigh electroshield,shin (no electroshield),foot (like a cats foot, they only stand on toes),foot electroshield panels,toes,Electroplate panels
-T5 Mech Leg  ,4140335767,T5_Mech_Leg_Steam.blend,base_0.001=ColourOveride=1,leg1_0.001=ColourOveride=1,leg1_1.001,leg2_0.001,leg3_0.001=ColourOveride=1,leg3_1.001,foot_0.001,foot_1.001
-#,,,
-T3 Sprinter Leg  ,3345472872,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
-T4 Sprinter Leg  ,1169080311,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001=ColourOveride=1,foot_0.001,leg1_0.001,leg1_1.001=ColourOveride=1,leg2_0.001,leg3_0.001,leg3_1.001=ColourOveride=1
-#,,,
-T0 Hovers  ,1851713730,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
-T1 Hovers  ,3170960304,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
-T2 Hovers  ,1639979618,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
-T3 Hovers  ,465491285,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
-T4 Hovers  ,3347041415,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
+#Glass Edge Slope ,?,Compact_Edge_Slope.blend,Sim_0
+#Glass Corner Slope ,?,Compact_Corner_Slope.blend,Sim_0
+#Glass Inner Slope ,?,Compact_Inner_Slope.blend,Sim_0
+#Glass Cone ,?,Compact_Cone.blend,Sim_0
+#Glass Pyramid ,?,Compact_Pyramid.blend,Sim_0
+#
+Neon Cube ,150161008,Compact_Cube.blend,Sim_0
+Neon Edge ,1183051379,Compact_Edge.blend,Sim_0
+Neon Corner ,2333317284,Compact_Corner.blend,Sim_0
+Neon Inner ,1616217456,Compact_Inner.blend,Sim_0
+#Neon Edge Round ,?,Compact_Edge_Round.blend,Sim_0
+Neon Corner Round ,3195590950,Compact_Corner_Round.blend,Sim_0
+#Neon Inner Round ,?,Compact_Inner_Round.blend,Sim_0
+#Neon Edge Slope ,?,Compact_Edge_Slope.blend,Sim_0
+#Neon Corner Slope ,?,Compact_Corner_Slope.blend,Sim_0
+#Neon Inner Slope ,?,Compact_Inner_Slope.blend,Sim_0
+#Neon Cone ,?,Compact_Cone.blend,Sim_0
+#Neon Pyramid ,?,Compact_Pyramid.blend,Sim_0
+#
+retro Cube ,183067052,Compact_Cube.blend,Sim_0
+retro Edge ,1150929327,Compact_Edge.blend,Sim_0
+retro Corner ,1387792676,Compact_Corner.blend,Sim_0
+retro Inner ,3985049715,Compact_Inner.blend,Sim_0
+#retro Edge Round ,?,Compact_Edge_Round.blend,Sim_0
+#retro Corner Round ,?,Compact_Corner_Round.blend,Sim_0
+#retro Inner Round ,?,Compact_Inner_Round.blend,Sim_0
+#retro Edge Slope ,?,Compact_Edge_Slope.blend,Sim_0
+#retro Corner Slope ,?,Compact_Corner_Slope.blend,Sim_0
+#retro Inner Slope ,?,Compact_Inner_Slope.blend,Sim_0
+#retro Cone ,?,Compact_Cone.blend,Sim_0
+#retro Pyramid ,?,Compact_Pyramid.blend,Sim_0
+#
+ \ Armored Helium T4,3305279060,Compact_Cube.blend,Sim_-3
+ \ Armored Helium T6,1914654544,Compact_Cube.blend,Sim_-2
+ \ Armored Helium T8,2001668174,Compact_Cube.blend,Sim_-1
+Helium \ Armored Helium T10,3226650954,Compact_Cube.blend,Sim_0
+ \ Helium Tank,3425997036
+#
+T2 Rod  ,1818686721,Rod.blend,MeshRenderer_0=ColourOveride=4
+T2 Rod Short  ,1312806203,Rod_Short.blend,MeshRenderer_0=ColourOveride=4
+T2 Rod Long  ,3489647384,Rod_Long.blend,MeshRenderer_0=ColourOveride=4
+T2 Rod Arc  ,2454932271,Rod_Arc.blend,MeshRenderer_0=ColourOveride=4
+T2 Rod Arc Short  ,3568811832,Rod_Arc_Short.blend,MeshRenderer_0=ColourOveride=4
+T2 Rod Diagonal 2d  ,394503911,Rod_Diagonal_2D.blend,Rod_Diagonal_2D_0=ColourOveride=4
+T2 Rod Diagonal 2d Short  ,1316425218,Rod_Diagonal_Short.blend,MeshRenderer_0=ColourOveride=4
+T2 Rod Diagonal 3d  ,3705632066,Rod_Diagonal_3D.blend,Rod_Diagonal_3D_0=ColourOveride=4
+T2 Rod Plus  ,1750720388,Rod_Plus.blend,MeshRenderer_0=ColourOveride=4
+T2 Rod Frame  ,651695911,Rod_Skewed-Plus.blend,MeshRenderer_0.002=ColourOveride=4
+T2 Rod Cross  ,4265819694,Rod_Cross.blend,MeshRenderer_0=ColourOveride=4
+#
+T3 Strut  ,4262490755,Strut.blend,strut_short_0
+T3 Strut Short  ,1648206355,Strut_Short.blend,Strut_Short_0
+T3 Strut Long  ,3084940372,Strut_Long.blend,strut_long_0
+T3 Strut Arc  ,743433251,Strut_Arc.blend,strut_arc_0
+T3 Strut Arc Short  ,4206005137,Strut_Arc_Short.blend,Strut_Arc_Short_0
+T3 Strut Slice  ,2126360617,Strut_Slice.blend,strut_slice_0
+T3 Strut Slice Short  ,2608938070,Strut_Slice_Short.blend,Strut_Slice_Short_0
+T3 Strut Ramp  ,3999885169,Strut_Ramp.blend,strut_ramp_0
+T3 Strut Ramp Short  ,3903776284,Strut_Ramp_Short.blend,Strut_Ramp_Short_0
+T3 Strut Diagonal 2d  ,14694903,Strut_Diagonal_2D.blend,strut_diagonal_2D_0
+T3 Strut Diagonal 2d Short  ,3562021587,Strut_Diagonal_Short.blend,Strut_Diagonal_Short_0
+T3 Strut Plus  ,511164535,Strut_Plus.blend,Strut_Plus_0
+T3 Strut Cross  ,787409845,Strut_Arc_Cross.blend,Strut_Cross_0
+T3 Strut Skewed Plus  ,1521447199,Strut_Skewed_Plus.blend,Strut_Skewed_Plus_0
+T3 Strut Diagonal 3d Right  ,2002864041,Strut_Diagonal_3D_Right.blend,strut_diagonal_3D_right_0
+T3 Strut Diagonal 3d Left  ,2028802540,Strut_Diagonal_3D_Left.blend,strut_diagonal_3D_left_0
+T3 Strut Diagonal 3d Right Short  ,3923036903,Strut_Diagonal_3D_Short_Right.blend,Strut_Diagonal_3D_Short_Right_0
+T3 Strut Diagonal 3d Left Short  ,1319987665,Strut_Diagonal_3D_Short_Left.blend,Strut_Diagonal_3D_Short_Left_0
+#
+# \ Wheel Steering T1,3769194911
+# \ Wheel Steering T2,3158825472
+# \ Wheel Steering T3,1526222854
+# \ Wheel Steering T4,3539316064
+# \ Wheel Steering T5,3435681649
+# \ Wheel Steering T6,1701822652
+# \ Wheel Steering T7,1868379119
+# \ Wheel Steering T8,244400800
+# \ Wheel Steering T9,4184683672
+# \ Wheel Steering T10,3104518012
+# \ Wheel T1,2866040116
+# \ Wheel T2,299251682
+# \ Wheel T3,182430853
+# \ Wheel T4,2137276546
+# \ Wheel T5,2632952818
+# \ Wheel T6,3372100958
+# \ Wheel T7,1065013100
+# \ Wheel T8,2734731074
+# \ Wheel T9,2840250395
+# \ Wheel T10,345686686
+#
+T0 Wheel  ,1810876016,Spotter-Mace-0.blend,Mace
+T0 Steering Wheel  ,932552373,Spotter-Mace-0.blend,Mace
+T1 Wheel  ,4172855773,Spotter-Mace-0.blend,Mace
+T1 Steering Wheel  ,169839823,Spotter-Mace-0.blend,Mace
+T2 Wheel  ,2924196438,Spotter-Mace-0.blend,Mace
+T2 Steering Wheel  ,2958657062,Spotter-Mace-0.blend,Mace
+T3 Wheel  ,3028949761,Spotter-Mace-0.blend,Mace
+T3 Steering Wheel  ,1177366035,Spotter-Mace-0.blend,Mace
+T4 Wheel  ,1223384335,Spotter-Mace-0.blend,Mace
+T4 Steering Wheel  ,345048522,Spotter-Mace-0.blend,Mace
+T5 Wheel  ,3301162279,Spotter-Mace-0.blend,Mace
+T5 Steering Wheel  ,48208435,Spotter-Mace-0.blend,Mace
+#
+T1 Tank Track  ,4050988656,Spotter-Mace-0.blend,Mace
+T2 Tank Track  ,1691117057,Spotter-Mace-0.blend,Mace
+T3 Tank Track  ,184017928,Spotter-Mace-0.blend,Mace
+T4 Tank Track  ,5728820,Spotter-Mace-0.blend,Mace
+T5 Tank Track  ,431289744,Spotter-Mace-0.blend,Mace
+#
+T0 Mech Leg  ,3066502430,Spotter-Mace-0.blend,Mace
+T1 Mech Leg  ,76192516,Spotter-Mace-0.blend,Mace
+T2 Mech Leg  ,1789991181,Spotter-Mace-0.blend,Mace
+T3 Mech Leg  ,1611765553,Spotter-Mace-0.blend,Mace
+T4 Mech Leg  ,2452579137,Spotter-Mace-0.blend,Mace
+T5 Mech Leg  ,4140335767,Spotter-Mace-0.blend,Mace
+#
+T3 Sprinter Leg  ,3345472872,Spotter-Mace-0.blend,Mace
+T4 Sprinter Leg  ,1169080311,Spotter-Mace-0.blend,Mace
+Sprinter Leg Variant,2474131397,Spotter-Mace-0.blend,Mace
+#
+ \ Walker Leg T7,2535778622,Spotter-Mace-0.blend,Mace
+T3 Insect Leg   \ Walker Leg T8,127661231,Spotter-Mace-0.blend,Mace
+ \ Walker Leg T9,1889322041,Spotter-Mace-0.blend,Mace
+T4 Insect Leg   \ Walker Leg T10,1668760037,Spotter-Mace-0.blend,Mace
+Hairy Insect Leg,875393229,Spotter-Mace-0.blend,Mace
+#
+T2 Steering Ski  ,3080624795,Spotter-Mace-0.blend,Mace
+T2 Ski  ,347391203,Spotter-Mace-0.blend,Mace
+#
+T0 Hovers   \ Hover Blade T2,1851713730,Spotter-Mace-0.blend,Mace
+ \ Hover Blade T3,947628072,Spotter-Mace-0.blend,Mace
+T1 Hovers   \ Hover Blade T4,3170960304,Spotter-Mace-0.blend,Mace
+ \ Hover Blade T5,1333565630,Spotter-Mace-0.blend,Mace
+T2 Hovers   \ Hover Blade T6,1639979618,Spotter-Mace-0.blend,Mace
+ \ Hover Blade T7,3508014365,Spotter-Mace-0.blend,Mace
+T3 Hovers   \ Hover Blade T8,465491285,Spotter-Mace-0.blend,Mace
+ \ Hover Blade T9,2787065227,Spotter-Mace-0.blend,Mace
+T4 Hovers   \ Hover Blade T10,3347041415,Spotter-Mace-0.blend,Mace
 T5 Hovers  ,3835205776,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
 Hovers Goldern,2217471839,RC_TX_Hover.blend,TX_Hover_0,Mega_Hover_Blade_0
-#,,,
+#
+T2 Rotors  ,3947193935,Spotter-Mace-0.blend,Mace
+T3 Rotors  ,3789940851,Spotter-Mace-0.blend,Mace
+T4 Rotors  ,1802864184,Spotter-Mace-0.blend,Mace
+#
 T2 Wing  ,3980928804,Wing.blend,DrawCall_2.001,DrawCall_3.001
-T3 Wing  ,2205394221,Wing.blend,DrawCall_2.001,DrawCall_3.001
-T4 Wing  ,2312317713,Wing.blend,DrawCall_2.001,DrawCall_3.001
-T5 Wing  ,2464192350,Wing.blend,DrawCall_2.001,DrawCall_3.001
-#,,,
-T0 Front Laser  ,3402350870,T1 Blaster.blend,DrawCall_15
-T1 Front Laser  ,2494440442,T1 Blaster.blend,DrawCall_15
-T2 Front Laser  ,1584562849,T1 Blaster.blend,DrawCall_15
-T3 Front Laser  ,2675516967,T1 Blaster.blend,DrawCall_15
-T4 Front Laser  ,1436911484,T1 Blaster.blend,DrawCall_15
-T0 Laser  ,3809895395,T1 Blaster.blend,DrawCall_15
-T1 Laser  ,3178463503,T1 Blaster.blend,DrawCall_15
-T2 Laser  ,2007965780,T1 Blaster.blend,DrawCall_15
-T3 Laser  ,3064235218,T1 Blaster.blend,DrawCall_15
-T4 Laser  ,2088248713,T1 Blaster.blend,DrawCall_15
+ \ Aerofoil T5,1515578912,Spotter-Mace-0.blend,Mace
+T3 Wing   \ Aerofoil T6,2205394221,Wing.blend,DrawCall_2.001,DrawCall_3.001
+ \ Aerofoil T7,879649833,Spotter-Mace-0.blend,Mace
+T4 Wing   \ Aerofoil T8,2312317713,Wing.blend,DrawCall_2.001,DrawCall_3.001
+ \ Aerofoil T9,1053747733,Spotter-Mace-0.blend,Mace
+T5 Wing   \ Aerofoil T10,2464192350,Wing.blend,DrawCall_2.001,DrawCall_3.001
+#
+T2 Rudder  ,2369778644,Wing.blend,DrawCall_2.001,DrawCall_3.001
+ \ Rudder T5,975319760,Spotter-Mace-0.blend,Mace
+T3 Rudder   \ Rudder T6,3808719325,Wing.blend,DrawCall_2.001,DrawCall_3.001
+ \ Rudder T7,1410969817,Spotter-Mace-0.blend,Mace
+T4 Rudder   \ Rudder T8,3919904737,Wing.blend,DrawCall_2.001,DrawCall_3.001
+ \ Rudder T9,1589198565,Spotter-Mace-0.blend,Mace
+T5 Rudder   \ Rudder T10,2608683011,Wing.blend,DrawCall_2.001,DrawCall_3.001
+#
+T1 Thruster   \ Thruster T2,844778245,Spotter-Mace-0.blend,Mace
+ \ Thruster T3,4276453881,Spotter-Mace-0.blend,Mace
+T2 Thruster   \ Thruster T4,2498076128,Spotter-Mace-0.blend,Mace
+ \ Thruster T5,1572019677,Spotter-Mace-0.blend,Mace
+T3 Thruster   \ Thruster T6,3764614578,Spotter-Mace-0.blend,Mace
+ \ Thruster T7,3285682302,Spotter-Mace-0.blend,Mace
+T4 Thruster   \ Thruster T8,3938712462,Spotter-Mace-0.blend,Mace
+ \ Thruster T9,3033577704,Spotter-Mace-0.blend,Mace
+T5 Thruster   \ Thruster T10,2969949587,Spotter-Mace-0.blend,Mace
+?Some kind of fancy pants thruster,944347375,Spotter-Mace-1.blend,Mace
+#
+T3 Prop  ,3286209719,Spotter-Mace-0.blend,Mace
+T4 Prop  ,2784549582,Spotter-Mace-0.blend,Mace
+#
+ \ Front Mount SMG T1,1337963121,Spotter-Mace-0.blend,Mace
+T0 Front Laser   \ Front Mount SMG T2,3402350870,T1 Blaster.blend,DrawCall_15
+ \ Front Mount SMG T3,776342052,Spotter-Mace-0.blend,Mace
+T1 Front Laser   \ Front Mount SMG T4,2494440442,T1 Blaster.blend,DrawCall_15
+ \ Front Mount SMG T5,1497447090,Spotter-Mace-0.blend,Mace
+T2 Front Laser   \ Front Mount SMG T6,1584562849,T1 Blaster.blend,DrawCall_15
+ \ Front Mount SMG T7,3341135633,Spotter-Mace-0.blend,Mace
+T3 Front Laser   \ Front Mount SMG T8,2675516967,T1 Blaster.blend,DrawCall_15
+ \ Front Mount SMG T9,2955059079,Spotter-Mace-0.blend,Mace
+T4 Front Laser   \ Front Mount SMG T10,1436911484,T1 Blaster.blend,DrawCall_15
+ \ Top Mount SMG T1,2929054885,Spotter-Mace-0.blend,Mace
+T0 Laser   \ Top Mount SMG T2,3809895395,T1 Blaster.blend,DrawCall_15
+ \ Top Mount SMG T3,2985370719,Spotter-Mace-0.blend,Mace
+T1 Laser   \ Top Mount SMG T4,3178463503,T1 Blaster.blend,DrawCall_15
+ \ Top Mount SMG T5,3338015945,Spotter-Mace-0.blend,Mace
+T2 Laser   \ Top Mount SMG T6,2007965780,T1 Blaster.blend,DrawCall_15
+ \ Top Mount SMG T7,1485996394,Spotter-Mace-0.blend,Mace
+T3 Laser   \ Top Mount SMG T8,3064235218,T1 Blaster.blend,DrawCall_15
+ \ Top Mount SMG T9,798339580,Spotter-Mace-0.blend,Mace
+T4 Laser   \ Top Mount SMG T10,2088248713,T1 Blaster.blend,DrawCall_15
 T5 Laser  ,3209000021,RC_TX_SMG_1.blend,RC_SMG_TX1_0,RC_SMG_TX1_Arm_0,RC_SMG_TX1_Barrel_0,RC_SMG_TX1_Muzzle_0
 T5 Laser (Gold),3851710054,RC_TX_SMG_1.blend,RC_SMG_TX1_0,RC_SMG_TX1_Arm_0,RC_SMG_TX1_Barrel_0,RC_SMG_TX1_Muzzle_0
-#,,,
+?Variant of a T4 Laser,3632954889,T1 Blaster.blend,DrawCall_15
+?Variant of a T5 Laser,1199458351,RC_TX_SMG_1.blend,RC_SMG_TX1_0,RC_SMG_TX1_Arm_0,RC_SMG_TX1_Barrel_0,RC_SMG_TX1_Muzzle_0
+#
 T0 Plasma  ,2655409492,T1 Blaster.blend,DrawCall_15
-T1 Plasma  ,1293532710,T1 Blaster.blend,DrawCall_15
-T2 Plasma  ,2446895092,T1 Blaster.blend,DrawCall_15
-T3 Plasma  ,3953551555,T1 Blaster.blend,DrawCall_15
-T4 Plasma  ,929526033,T1 Blaster.blend,DrawCall_15
-T5 Plasma  ,171448327,RC_TX_SMG_1.blend,RC_SMG_TX1_0,RC_SMG_TX1_Arm_0,RC_SMG_TX1_Barrel_0,RC_SMG_TX1_Muzzle_0
-#,,,
-T1 Rail  ,1640043587,T1 Blaster.blend,DrawCall_15
-T2 Rail  ,2870850840,T1 Blaster.blend,DrawCall_15
-T3 Rail  ,1779831198,T1 Blaster.blend,DrawCall_15
-T4 Rail  ,2697638085,T1 Blaster.blend,DrawCall_15
+ \ Plasma Launcher T3,1412971690,Spotter-Mace-0.blend,Mace
+T1 Plasma   \ Plasma Launcher T4,1293532710,T1 Blaster.blend,DrawCall_15
+ \ Plasma Launcher T5,3810917806,Spotter-Mace-0.blend,Mace
+T2 Plasma   \ Plasma Launcher T6,2446895092,T1 Blaster.blend,DrawCall_15
+ \ Plasma Launcher T7,3866475184,Spotter-Mace-0.blend,Mace
+T3 Plasma   \ Plasma Launcher T8,3953551555,T1 Blaster.blend,DrawCall_15
+ \ Plasma Launcher T9,1365801908,Spotter-Mace-0.blend,Mace
+T4 Plasma   \ Plasma Launcher T10,929526033,T1 Blaster.blend,DrawCall_15
+T5 Plasma  ,171448327,T1 Blaster.blend,DrawCall_15
+T5 Plasma Variant,1593059007,T1 Blaster.blend,DrawCall_15
+#
+T1 Rail   \ Rail Cannon T4,1640043587,T1 Blaster.blend,DrawCall_15
+ \ Rail Cannon T5,360854742,Spotter-Mace-0.blend,Mace
+T2 Rail   \ Rail Cannon T6,2870850840,T1 Blaster.blend,DrawCall_15
+ \ Rail Cannon T7,282227656,Spotter-Mace-0.blend,Mace
+T3 Rail   \ Rail Cannon T8,1779831198,T1 Blaster.blend,DrawCall_15
+ \ Rail Cannon T9,2815406796,Spotter-Mace-0.blend,Mace
+T4 Rail   \ Rail Cannon T10,2697638085,T1 Blaster.blend,DrawCall_15
+#
 T5 Rail  ,2083340214,T1 Blaster.blend,DrawCall_15
-#,,,
-T2 Nano  ,1761903423,T1 Blaster.blend,DrawCall_15
-T3 Nano  ,1671695619,T1 Blaster.blend,DrawCall_15
-T4 Nano  ,2364175165,T1 Blaster.blend,DrawCall_15
-#,,,
+T5 Rail (Gold),447003593,T1 Blaster.blend,DrawCall_15
+#
+T2 Nano   \ Nanotech Disruptor T6,1761903423,T1 Blaster.blend,DrawCall_15
+ \ Nanotech Disruptor T7,3726197307,Spotter-Mace-0.blend,Mace
+T3 Nano   \ Nanotech Disruptor T8,1671695619,T1 Blaster.blend,DrawCall_15
+ \ Nanotech Disruptor T9,3568946183,Spotter-Mace-0.blend,Mace
+T4 Nano   \ Nanotech Disruptor T10,2364175165,T1 Blaster.blend,DrawCall_15
+#
+T2 Tesla  ,2017654588,Spotter-Mace-0.blend,Mace
+T3 Tesla  ,3479123512,Spotter-Mace-0.blend,Mace
+T4 Tesla  ,2703353899,Spotter-Mace-0.blend,Mace
+#
 T3 Seeker  ,48150119,T1 Blaster.blend,DrawCall_15
 T4 Seeker  ,350778877,T1 Blaster.blend,DrawCall_15
 T5 Seeker  ,2419806013,T1 Blaster.blend,DrawCall_15
-#,,,
+#
 T4 Flak  ,3947892032,T1 Blaster.blend,DrawCall_15
 T5 Flak  ,73607413,T1 Blaster.blend,DrawCall_15
-#,,,
-T4 Ion  ,3541341953,T1 Blaster.blend,
-T5 Ion  ,1184153980,T1 Blaster.blend,
-#,,,
-T5 Mortar  ,1885850433,T1 Blaster.blend,
-#,,,
-#,,,Very large deep corner shield
-T5 Electroshield B Left  ,3001609712,RC_MegaPlate_TX1A_L.blend,MegaPlate_TX1A_L_0=ColourOveride=1,MegaPlate_TX1A_L_1,MegaPlate_TX1A_L_2=ColourOveride=1
-T5 Electroshield B Right  ,3365106304,RC_MegaPlate_TX1A_R.blend,MegaPlate_TX1A_R_0=ColourOveride=1,MegaPlate_TX1A_R_1,MegaPlate_TX1A_R_2=ColourOveride=1
-#,,,(Logo Face),(Electroshield),(Back)
-,,,
-#,,,Massive flat long rectangular shield
-T5 Electroshield C Left  ,991790322,RC_MegaPlate_TX1B_L.blend,MegaPlate_TX1B_L_0=ColourOveride=1,MegaPlate_TX1B_L_1,MegaPlate_TX1B_L_2=ColourOveride=1
-T5 Electroshield C Right  ,1097210754,RC_MegaPlate_TX1B_R.blend,MegaPlate_TX1B_R_0=ColourOveride=1,MegaPlate_TX1B_R_1,MegaPlate_TX1B_R_2=ColourOveride=1
-#,,,(Logo Face),(Electroshield),(Back)
 #
+T4 Chaingun  ,1318129004,Spotter-Mace-0.blend,Mace
+T5 Chaingun  ,1795842454,Spotter-Mace-0.blend,Mace
+#
+T4 Ion  ,3541341953,T1 Blaster.blend,DrawCall_15
+T5 Ion  ,1184153980,T1 Blaster.blend,DrawCall_15
+#
+T5 Mortar  ,1885850433,T1 Blaster.blend,DrawCall_15
+#
+Energy Module  ,1692614192,Spotter-Mace-0.blend,Mace
+Disc Shield Module  ,3263542661,Spotter-Mace-0.blend,Mace
+Blink Module  ,3987245394,Spotter-Mace-0.blend,Mace
+Ghost Modue  ,4230376397,Spotter-Mace-0.blend,Mace
+Emp Module  ,658488560,Spotter-Mace-0.blend,Mace
+Windowmaker Module  ,344080878,Spotter-Mace-0.blend,Mace
+#
+T2 Electroshield A Left  ,1264237222,Spotter-Mace-0.blend,Mace
+T2 Electroshield A Right  ,2965095316,Spotter-Mace-0.blend,Mace
+T2 Electroshield B Left  ,2457663915,Spotter-Mace-0.blend,Mace
+T2 Electroshield B Right  ,1771929753,Spotter-Mace-0.blend,Mace
+T2 Electroshield C Left  ,627128495,Spotter-Mace-0.blend,Mace
+T2 Electroshield C Right  ,3732947357,Spotter-Mace-0.blend,Mace
+T3 Electroshield A Left  ,540114865,Spotter-Mace-0.blend,Mace
+T3 Electroshield A Right  ,3687843459,Spotter-Mace-0.blend,Mace
+T3 Electroshield B Left  ,2536292021,Spotter-Mace-0.blend,Mace
+T3 Electroshield B Right  ,1825425287,Spotter-Mace-0.blend,Mace
+T3 Electroshield C Left  ,1309343160,Spotter-Mace-0.blend,Mace
+T3 Electroshield C Right  ,3052110986,Spotter-Mace-0.blend,Mace
+T4 Electroshield A Left  ,4179049660,Spotter-Mace-0.blend,Mace
+T4 Electroshield A Right  ,49694094,Spotter-Mace-0.blend,Mace
+T4 Electroshield B Left  ,1152021380,Spotter-Mace-0.blend,Mace
+T4 Electroshield B Right  ,3209366198,Spotter-Mace-0.blend,Mace
+T4 Electroshield C Left  ,4088902272,Spotter-Mace-0.blend,Mace
+T4 Electroshield C Right  ,139905970,Spotter-Mace-0.blend,Mace
+T5 Electroshield A Left   \ Electroplate R T10,1889152405,Spotter-Mace-0.blend,Mace
+T5 Electroshield A Right   \ Electroplate L T10,3823106277,Spotter-Mace-0.blend,Mace
+#
+#,#,#,Very large deep corner shield
+T5 Electroshield B Left  ,3001609712,Spotter-Mace-0.blend,Mace
+T5 Electroshield B Right  ,3365106304,Spotter-Mace-0.blend,Mace
+#,#,#,(Logo Face),(Electroshield),(Back)
+#
+#,#,#,Massive flat long rectangular shield
+T5 Electroshield C Left  ,991790322,Spotter-Mace-0.blend,Mace
+T5 Electroshield C Right  ,1097210754,Spotter-Mace-0.blend,Mace
+#,#,#,(Logo Face),(Electroshield),(Back)
+#
+ \ Electroplate L T3,2860532867,Spotter-Mace-0.blend,Mace
+ \ Electroplate L T4,2949645213,Spotter-Mace-0.blend,Mace
+ \ Electroplate L T5,416137881,Spotter-Mace-0.blend,Mace
+ \ Electroplate L T6,3253436820,Spotter-Mace-0.blend,Mace
+ \ Electroplate L T7,1995849872,Spotter-Mace-0.blend,Mace
+ \ Electroplate L T8,3410694056,Spotter-Mace-0.blend,Mace
+ \ Electroplate L T9,2086063788,Spotter-Mace-0.blend,Mace
+ \ Electroplate R T3,3746649421,Spotter-Mace-0.blend,Mace
+ \ Electroplate R T4,3657503315,Spotter-Mace-0.blend,Mace
+ \ Electroplate R T5,1830605655,Spotter-Mace-0.blend,Mace
+ \ Electroplate R T6,3023736922,Spotter-Mace-0.blend,Mace
+ \ Electroplate R T7,52908382,Spotter-Mace-0.blend,Mace
+ \ Electroplate R T8,3197771366,Spotter-Mace-0.blend,Mace
+ \ Electroplate R T9,159899490,Spotter-Mace-0.blend,Mace
+#
+cockpit,3531325242,Spotter-Mace-0.blend,Mace
+ \ Pilot Seat,3186524732,Spotter-Mace-0.blend,Mace
+#
+Robopass Season 2 Holoflag  ,3411783298,Spotter-Mace-0.blend,Mace
+Bunny Holoflag  ,2663263630,Spotter-Mace-0.blend,Mace
+UK \ UK Country Badge,4175295691,Spotter-Mace-0.blend,Mace
+Italy \ Italy Country Badge,4166201860,Spotter-Mace-0.blend,Mace
+Crossbones,4124816651,Spotter-Mace-0.blend,Mace
+Turkey,4070927930,Spotter-Mace-0.blend,Mace
+Russia \ Russia Country Badge,4065608086,Spotter-Mace-0.blend,Mace
+USA \ USA Country Badge,3559676835,Spotter-Mace-0.blend,Mace
+Ireland \ Ireland Country Badge,3447406366,Spotter-Mace-0.blend,Mace
+Kazakhstan \ Kazakhstan Country Badge,3330651823,Spotter-Mace-0.blend,Mace
+V,3210649465,Spotter-Mace-0.blend,Mace
+Spain \ Spain Country Badge,3114896263,Spotter-Mace-0.blend,Mace
+Poland \ Poland Country Badge,2730691972,Spotter-Mace-0.blend,Mace
+Germany \ Germany Country Badge,2596479965,Spotter-Mace-0.blend,Mace
+Alien,2345098755,Spotter-Mace-0.blend,Mace
+Robocraft \ Breached Badge,1958111892,Spotter-Mace-0.blend,Mace
+Belgium,1798659636,Spotter-Mace-0.blend,Mace
+Iceland,1796059677,Spotter-Mace-0.blend,Mace
+Sweden \ Sweden Country Badge,1786715320,Spotter-Mace-0.blend,Mace
+Belarus \ Belarus Country Badge,1768151340,Spotter-Mace-0.blend,Mace
+Canada \ Canada Country Badge,1385335421,Spotter-Mace-0.blend,Mace
+Denmark,932603502,Spotter-Mace-0.blend,Mace
+Australia \ Australian Country Badge,664490215,Spotter-Mace-0.blend,Mace
+4,507555577,Spotter-Mace-0.blend,Mace
+Argentina \ Argentina Country Badge,354715741,Spotter-Mace-0.blend,Mace
+Holland \ Netherlands Country Badge,88051662,Spotter-Mace-0.blend,Mace
+Ukraine \ Ukraine Country Badge,68277216,Spotter-Mace-0.blend,Mace
+Brazil Country Badge \ Brazil Country Badge,2243089188,Spotter-Mace-0.blend,Mace
+China Country Badge \ China Country Badge,3910121366,Spotter-Mace-0.blend,Mace
+France Country Badge \ France Country Badge,2373812955,Spotter-Mace-0.blend,Mace
+Japan Country Badge \ Japan Country Badge,2020064218,Spotter-Mace-0.blend,Mace
+South Korea Country Badge \ South Korea Country Badge,460733827,Spotter-Mace-0.blend,Mace
+#
+?Tiny Fin \ Headlamp,1367205243,Spotter-Mace-0.blend,Mace
+?Exhaust Pipe,1679554409,Spotter-Mace-0.blend,Mace
+?Long Exhaust Pipe With Muffler,149580437,Spotter-Mace-0.blend,Mace
+?Spike,1810319153,Spotter-Mace-0.blend,Mace
+?Rubbish bin lid,575087658,Spotter-Mace-0.blend,Mace
+?Cosmetic Thing / Eyeball / Stearing wheel,1609561971,Spotter-Mace-0.blend,Mace
+?colourful thing on the HALO Warthog. Pilot seat maybe?,2325944783,Spotter-Mace-1.blend,Mace
+?Pilots Seat,2743059293,Spotter-Mace-0.blend,Mace
+?Fang,1991524976,Spotter-Mace-0.blend,Mace
+?Cosmetic Satelite dish,3370519355,Spotter-Mace-1.blend,Mace
+?Cosmetic Component,2330463949,Spotter-Mace-0.blend,Mace
+?Blade,688123941,Spotter-Mace-0.blend,Mace
+ \ Robot Name Banner,2782198650,Spotter-Mace-0.blend,Mace
+ \ Vapor Trail L1,3610833057,Spotter-Mace-0.blend,Mace
+ \ Vapor Trail L2,236893100,Spotter-Mace-0.blend,Mace
+#
+ \ Alignment Rectifier T1,2759478449,Spotter-Mace-0.blend,Mace
+ \ Alignment Rectifier T3,2103185340,Spotter-Mace-0.blend,Mace
+ \ Alignment Rectifier T5,3393310392,Spotter-Mace-0.blend,Mace
+ \ Alignment Rectifier T7,3474033062,Spotter-Mace-0.blend,Mace
+ \ Alignment Rectifier T9,2014070946,Spotter-Mace-0.blend,Mace
+ \ Dev Supporter,4200145444,Spotter-Mace-0.blend,Mace
+ \ Gold Dev Supporter,3370765914,Spotter-Mace-0.blend,Mace
+#
+ \ Enemy Radar T1,3123991804,Spotter-Mace-0.blend,Mace
+ \ Enemy Radar T5,591201606,Spotter-Mace-0.blend,Mace
+ \ Enemy Radar T9,1413101008,Spotter-Mace-0.blend,Mace
+ \ Radar Jammer T3,3805965640,Spotter-Mace-0.blend,Mace
+ \ Radar Jammer T5,1439149132,Spotter-Mace-0.blend,Mace
+ \ Radar Jammer T7,1352133458,Spotter-Mace-0.blend,Mace
+ \ Radar Jammer T9,3884591702,Spotter-Mace-0.blend,Mace
+ \ Radar Receiver T5,2460830034,Spotter-Mace-0.blend,Mace
+ \ Radar Receiver T7,2549943884,Spotter-Mace-0.blend,Mace
+ \ Radar Receiver T9,551604040,Spotter-Mace-0.blend,Mace
+#
+#T5 golden wheels
+#T3 Electroshield B Left Spiked
+#T3 Electroshield B Right Spiked
+#T3 Electroshield B Left Football
+#T3 Electroshield B Right Football
+#Bronze League Badge
+#Headlamp
+#Robot Name Badge
+#Pilot Seat Cray
+#Pilot Seat (obscured)
+#Pilot Seat Mega
+#Spike (obscured)
+#Vigilant Eyeball Right
+#Spike Pin
+#Spike Needle
+#Spike Dagger
+#Cockpit Front Left
+#Cockpit Mid Right
+#Sabre Tooth Ear Right
+#Sabre Tooth Face Left
+#Sabre Tooth Face Right
+#Sabretooth Jaw Left
+#Football Face Left
+#Football Face Right
+#Football Guard Left
+#Football Guard Right
+#Football Helmet Left
+#Football Helmet Right
+#Eagle Face Left
+#Eagle Face Right
+#Eagle Feathers Left
+#Eagle Feathers Right
+#Eagle Neck Left
+#Eagle Neck Right
+#Alienware Mask Ear Left
+#Alienware Mask Ear right
+#Alienware Mask Head Left
+#Alienware Mask Head Right
+#Alienware Mask Eye Left
+#Alienware Mask Eye right
+#Scary Mask Eyes Left
+#Scary Mask Eyes Right
+#Scary Mask Horn Left
+#Scary Mask Horn Right
+#Scary Mask Jaw Left
+#Scary Mask Jaw Right
+#Ninja Mask Head Right
+#Ninja Mask Head Left (not listed)
+#Ninja Mask Left
+#Ninja Mask Right
+#Honeydew Beard Left
+#Honeydew Beard Right
+#Honeydew Face Left
+#Honeydew Face Right
+#Honeydew Horns Left
+#Honeydew Horns Right
+#Mech 7 Ear Left
+#Mech 7 Ear Right
+#Mech 7 Jaw Left
+#Mech 7 Jaw Right (not listed)
+#Mech 7 Nose Left
+#Mech 7 Nose Right
+#Overwolf Ear Left
+#Overwolf Ear Right
+#Overwolf Eye Left
+#Overwolf Eye Right
+#Overwolf Jaw Left
+#Overwolf Jaw Right
+#Rhino 8 Ear Left
+#Rhino 8 Ear Right
+#Rhino 8 Jaw Left
+#Rhino 8 Jaw Right (not listed)
+#Rhino 8 Nose Right
+#Rhino 8 Nose Left (not listed)
+#
+#T-Rex Head Left
+#T-Rex Head Right
+#T-Rex Nose Left
+#T-Rex Nose Right
+#T-Rex Jaw Left
+#T-Rex Jaw Right

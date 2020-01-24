@@ -71,8 +71,17 @@ Which is why we're working on this RoboCraftAssembler project, once you have you
 2) Run it using the command line:
    blender --python assembler.py -- TheDistractingCicada.bot
    
-It's that simple!
-   
+~~It's that simple!~~ Actually, it fails if you have built your bot using multi part cubes like wings or shields.
+The code still works perfectly when executed from inside blender, but only basic cubes work from the command line.
+
+So.. open a blank blender file, create a new text file inside it that looks like this:
+```
+import sys
+import pathlib
+sys.path.append(str(pathlib.Path().absolute()))
+from assembler import main
+main("TheDistractingCicada.bot")
+```
 ### Version 0.3.2 and 0.3.3
 1) Open a blank Blender document
 

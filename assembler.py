@@ -412,4 +412,4 @@ def main(botfile):
     
     print("done!")
     
-main(botfile)
+#main(botfile)

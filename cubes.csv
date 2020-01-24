@@ -220,16 +220,18 @@ T3 Tank Track  ,184017928,Spotter-Mace-0.blend,Mace
 T4 Tank Track  ,5728820,Spotter-Mace-0.blend,Mace
 T5 Tank Track  ,431289744,Spotter-Mace-0.blend,Mace
 #
-T0 Mech Leg  ,3066502430,Spotter-Mace-0.blend,Mace
-T1 Mech Leg  ,76192516,Spotter-Mace-0.blend,Mace
-T2 Mech Leg  ,1789991181,Spotter-Mace-0.blend,Mace
-T3 Mech Leg  ,1611765553,Spotter-Mace-0.blend,Mace
-T4 Mech Leg  ,2452579137,Spotter-Mace-0.blend,Mace
-T5 Mech Leg  ,4140335767,Spotter-Mace-0.blend,Mace
+T0 Mech Leg  ,3066502430,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001,foot_0.001,leg1_0.001,leg1_1.001,leg2_0.001,leg3_0.001,leg3_1.001
+T1 Mech Leg  ,76192516,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001,foot_0.001,leg1_0.001,leg1_1.001,leg2_0.001,leg3_0.001,leg3_1.001
+T2 Mech Leg  ,1789991181,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001,foot_0.001,leg1_0.001,leg1_1.001,leg2_0.001,leg3_0.001,leg3_1.001
+T3 Mech Leg  ,1611765553,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001,foot_0.001,leg1_0.001,leg1_1.001,leg2_0.001,leg3_0.001,leg3_1.001
+T4 Mech Leg  ,2452579137,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001,foot_0.001,leg1_0.001,leg1_1.001,leg2_0.001,leg3_0.001,leg3_1.001
 #
-T3 Sprinter Leg  ,3345472872,Spotter-Mace-0.blend,Mace
-T4 Sprinter Leg  ,1169080311,Spotter-Mace-0.blend,Mace
-Sprinter Leg Variant,2474131397,Spotter-Mace-0.blend,Mace
+#,#,#,hips,thigh,thigh electroshield,shin (no electroshield),foot (like a cats foot, they only stand on toes),foot electroshield panels,toes,Electroplate panels
+T5 Mech Leg  ,4140335767,T5_Mech_Leg_Steam.blend,base_0.001,leg1_0.001,leg1_1.001,leg2_0.001,leg3_0.001,leg3_1.001,foot_0.001,foot_1.001
+#
+T3 Sprinter Leg  ,3345472872,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001,foot_0.001,leg1_0.001,leg1_1.001,leg2_0.001,leg3_0.001,leg3_1.001
+T4 Sprinter Leg  ,1169080311,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001,foot_0.001,leg1_0.001,leg1_1.001,leg2_0.001,leg3_0.001,leg3_1.001
+Sprinter Leg Variant,2474131397,T5_Mech_Leg_Steam.blend,base_0.001,foot_1.001,foot_0.001,leg1_0.001,leg1_1.001,leg2_0.001,leg3_0.001,leg3_1.001
 #
  \ Walker Leg T7,2535778622,Spotter-Mace-0.blend,Mace
 T3 Insect Leg   \ Walker Leg T8,127661231,Spotter-Mace-0.blend,Mace

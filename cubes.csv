@@ -147,7 +147,7 @@ retro Inner ,3985049715,Compact_Inner.blend,Sim_0
  \ Armored Helium T6,1914654544,Compact_Cube.blend,Sim_0
  \ Armored Helium T8,2001668174,Compact_Cube.blend,Sim_0
 Helium \ Armored Helium T10,3226650954,Compact_Cube.blend,Sim_0
- \ Helium Tank,3425997036
+ \ Helium Tank,3425997036,Spotter-Mace-0.blend,Mace
 #
 T2 Rod  ,1818686721,Rod.blend,MeshRenderer_0=ColourOveride=4
 T2 Rod Short  ,1312806203,Rod_Short.blend,MeshRenderer_0=ColourOveride=4

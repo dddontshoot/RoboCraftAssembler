@@ -1,5 +1,4 @@
 def go(botfile):
-    import bpy
     import base64
 
     if botfile[len(botfile)-4:len(botfile)]==".bot":

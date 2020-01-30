@@ -11,7 +11,7 @@ def go(cubeData,colourData,index):
         h2=cubeData[2:4]
         h3=cubeData[4:6]
         h4=cubeData[6:8]
-        cubeCount=(int(h1,16)+(256*int(h2,16))+(256*256*int(h3,16))+(256*256*256*int(h4,16)))
+        cubeCount=str(int(h1,16)+(256*int(h2,16))+(256*256*int(h3,16))+(256*256*256*int(h4,16)))
         return(cubeCount)
     else:
         # find the position of the cube I'm looking for...
@@ -54,7 +54,7 @@ def go(cubeData,colourData,index):
         #
         # I'm going to assume that each data chunk in cubeData matches up with the same index of colourData
         # which makes the header, and the first 6 characters of each data chunk superfluous.
-        colourmarker=8+(index*8)+6
+        colourmarker=8+(index*8)
         output["Colour"]=int(colourData[colourmarker:colourmarker+2],16)
 
         return(output)

@@ -11,7 +11,7 @@ def go(cubeData,colourData,index):
         h2=cubeData[2:4]
         h3=cubeData[4:6]
         h4=cubeData[6:8]
-        cubeCount=str(int(h1,16)+(256*int(h2,16))+(256*256*int(h3,16))+(256*256*256*int(h4,16)))
+        cubeCount=(int(h1,16)+(256*int(h2,16))+(256*256*int(h3,16))+(256*256*256*int(h4,16)))
         return(cubeCount)
     else:
         # find the position of the cube I'm looking for...
@@ -38,7 +38,7 @@ def go(cubeData,colourData,index):
         h2=cubeData[marker+2:marker+4]
         h3=cubeData[marker+4:marker+6]
         h4=cubeData[marker+6:marker+8]
-        output["ID"]=(int(h1,16)+(256*int(h2,16))+(256*256*int(h3,16))+(256*256*256*int(h4,16)))
+        output["ID"]=str(int(h1,16)+(256*int(h2,16))+(256*256*int(h3,16))+(256*256*256*int(h4,16)))
         
         ### Decode the location and orientation
         output["X"]=int(cubeData[marker+8:marker+10],16)

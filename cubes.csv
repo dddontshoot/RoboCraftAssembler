@@ -201,18 +201,18 @@ T3 Strut Diagonal 3d Left Short  ,1319987665,Strut_Diagonal_3D_Short_Left.blend,
 # \ Wheel T9,2840250395
 # \ Wheel T10,345686686
 #
-T0 Wheel  ,1810876016,Spotter-Mace-0.blend,Mace
-T0 Steering Wheel  ,932552373,Spotter-Mace-0.blend,Mace
-T1 Wheel  ,4172855773,Spotter-Mace-0.blend,Mace
-T1 Steering Wheel  ,169839823,Spotter-Mace-0.blend,Mace
-T2 Wheel  ,2924196438,Spotter-Mace-0.blend,Mace
-T2 Steering Wheel  ,2958657062,Spotter-Mace-0.blend,Mace
-T3 Wheel  ,3028949761,Spotter-Mace-0.blend,Mace
-T3 Steering Wheel  ,1177366035,Spotter-Mace-0.blend,Mace
-T4 Wheel  ,1223384335,Spotter-Mace-0.blend,Mace
-T4 Steering Wheel  ,345048522,Spotter-Mace-0.blend,Mace
-T5 Wheel  ,3301162279,Spotter-Mace-0.blend,Mace
-T5 Steering Wheel  ,48208435,Spotter-Mace-0.blend,Mace
+T0 Wheel  ,1810876016,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
+T0 Steering Wheel  ,932552373,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
+T1 Wheel  ,4172855773,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
+T1 Steering Wheel  ,169839823,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
+T2 Wheel  ,2924196438,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
+T2 Steering Wheel  ,2958657062,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
+T3 Wheel  ,3028949761,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
+T3 Steering Wheel  ,1177366035,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
+T4 Wheel  ,1223384335,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
+T4 Steering Wheel  ,345048522,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
+T5 Wheel  ,3301162279,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
+T5 Steering Wheel  ,48208435,T2-Wheel.blend,wheel_straight_medium_wheel=ColourOveride=4,wheel_straight_medium_suspension=ColourOveride=-4,Wheel_Straight_Medium_Base=ColourOveride=-4
 #
 T1 Tank Track  ,4050988656,Spotter-Mace-0.blend,Mace
 T2 Tank Track  ,1691117057,Spotter-Mace-0.blend,Mace

@@ -19,17 +19,7 @@ except ImportError:
 sys.path.append(str(pathlib.Path().absolute()))
 import lib.blender
 import lib.parser
-
-
-DEFAULT_BOT_FILE = "TheDistractingCicada.bot"
-if "--" in sys.argv:
-    botfile = sys.argv[sys.argv.index("--") + 1:].pop(0)
-else:
-    botfile = DEFAULT_BOT_FILE
-
-
-
-
+import lib.arguments
 
 def makeitso(cubeDataHex,colourDataHex,cubeCount,cubedatabase):
 
@@ -290,4 +280,5 @@ def main(botfile):
 
 
 if __name__ == "__main__":
+    botfile = lib.arguments.getBotFile()
     main(botfile)

@@ -10,7 +10,6 @@ except ImportError:
           "try invoking with blender --python " + sys.argv[0] + "\n")
 
 try:
-    import json
     import pathlib
 except ImportError:
     print("\nRobocraft Assembler is missing dependencies! Try running: "
@@ -20,7 +19,6 @@ sys.path.append(str(pathlib.Path().absolute()))
 import lib.blender
 import lib.parser
 import lib.arguments
-
 
 
 def main(botfile):

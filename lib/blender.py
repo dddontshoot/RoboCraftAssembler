@@ -21,7 +21,7 @@ def build(cubeDataHex, colourDataHex, cubeCount, cubedatabase):
 
     for x in range(0, cubeCount):
         if (x / 100 - int(x/100) == 0) and (x > 0):
-            percentage_completed = int((x/cubeCount) * 100)
+            percentage_completed = int((x / cubeCount) * 100)
             print(percentage_completed, "% complete")
         cube = lib.parser.getCubeData(cubeDataHex, colourDataHex, x)
 
@@ -39,14 +39,17 @@ def build(cubeDataHex, colourDataHex, cubeCount, cubedatabase):
         cubeimportdetails = json.loads(cubedatabase[cube["ID"]])
         objectlist = json.loads(cubeimportdetails["object"]) 
         section = "\\Object\\"
+        cubeimportdetails["blendfile"] = "blend/" + cubeimportdetails["blendfile"]
         filepath = cubeimportdetails["blendfile"] + section + cubeimportdetails["object"]
         directory = cubeimportdetails["blendfile"] + section
+        
 
         for filename in objectlist: 
             if "ColourOveride" in filename: 
                     filename, rubbish, cube["Colour"] = filename.split("=") 
                     cube["Colour"] = int(cube["Colour"])
             datum = cube["name"] + "." + filename 
+            
             if datum not in cubesinuse:  
                 print("Importing", datum, "now...")
                 bpy.ops.wm.append(

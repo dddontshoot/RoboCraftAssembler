@@ -1,7 +1,7 @@
 from sys import argv
 
 def getBotFile():
-    DEFAULT_BOT_FILE = "TheDistractingCicada.bot"
+    DEFAULT_BOT_FILE = "bots/TheDistractingCicada.bot"
     if "--" in argv:
         botfile = argv[argv.index("--") + 1:].pop(0)
     else:

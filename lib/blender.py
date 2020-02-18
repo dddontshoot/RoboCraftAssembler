@@ -6,6 +6,7 @@ import pathlib
 sys.path.append(str(pathlib.Path().absolute()))
 import lib.parser
 
+
 def unselectEverything():
     selected = bpy.context.selected_objects
     if len(selected) > 0:
@@ -14,49 +15,45 @@ def unselectEverything():
 
 
 def build(cubeDataHex, colourDataHex, cubeCount, cubedatabase):
-
     unknowncube = list()
     cubesinuse = list()
     coloursinuse = list()
 
     for x in range(0, cubeCount):
-        if (x / 100 - int(x/100) == 0) and (x > 0): 
+        if (x / 100 - int(x/100) == 0) and (x > 0):
             percentage_completed = int((x/cubeCount) * 100)
-            print(percentage_completed,"% complete")
-        cube = lib.parser.getCubeData(cubeDataHex,colourDataHex, x)
+            print(percentage_completed, "% complete")
+        cube = lib.parser.getCubeData(cubeDataHex, colourDataHex, x)
 
         if cube["ID"] not in cubedatabase:
-            if cube["ID"] not in unknowncube :
+            if cube["ID"] not in unknowncube:
                 print("Replacing cube", cube["ID"], "with Spotter-Mace-0000")
                 unknowncube.append(cube["ID"])
             cube["name"] = "#" + cube["ID"]
-            cube["ID"] = "Spotter-Mace-0000" 
+            cube["ID"] = "Spotter-Mace-0000"
         else:
             cube["name"] = cube["ID"]
-
         if not cube["ID"] in cubedatabase:
             print("\nError: cannot find ID#", cube["ID"], "in cubes.csv\n")
+
         cubeimportdetails = json.loads(cubedatabase[cube["ID"]])
         objectlist = json.loads(cubeimportdetails["object"]) 
-
-        section="\\Object\\"
-        
-        filepath  = cubeimportdetails["blendfile"] + section + cubeimportdetails["object"]
+        section = "\\Object\\"
+        filepath = cubeimportdetails["blendfile"] + section + cubeimportdetails["object"]
         directory = cubeimportdetails["blendfile"] + section
 
         for filename in objectlist: 
             if "ColourOveride" in filename: 
-                        filename, rubbish, cube["Colour"] = filename.split("=") 
-                        cube["Colour"] = int(cube["Colour"])
+                    filename, rubbish, cube["Colour"] = filename.split("=") 
+                    cube["Colour"] = int(cube["Colour"])
             datum = cube["name"] + "." + filename 
             if datum not in cubesinuse:  
                 print("Importing", datum, "now...")
                 bpy.ops.wm.append(
-                filepath = filepath, 
-                filename = filename, 
-                directory = directory
+                    filepath=filepath, 
+                    filename=filename, 
+                    directory=directory
                 )
-
                 bpy.data.objects[filename].name = datum  
                 cubesinuse.append(datum) 
 
@@ -65,12 +62,11 @@ def build(cubeDataHex, colourDataHex, cubeCount, cubedatabase):
             bpy.data.objects.get(datum).select = True
             bpy.ops.object.duplicate(linked = True) 
 
-            selected=bpy.context.selected_objects 
+            selected = bpy.context.selected_objects 
             if len(selected) > 0:
-                newcube=selected.pop() 
-                newcube.location=(cube["X"],cube["Y"],cube["Z"])
+                newcube = selected.pop() 
+                newcube.location = (cube["X"], cube["Y"], cube["Z"])
                 newcube.material_slots[0].link = 'OBJECT' 
-
 
                 if cube["O"] == 0:
                     bpy.ops.transform.rotate(value=-1.5708, axis=(0, 0, 1), constraint_axis=(False, False, True), constraint_orientation='GLOBAL', mirror=False, proportional='ENABLED', proportional_edit_falloff='SMOOTH', proportional_size=1)
@@ -134,10 +130,8 @@ def build(cubeDataHex, colourDataHex, cubeCount, cubedatabase):
                     bpy.ops.transform.rotate(value=-1.5708, axis=(0, 1, 0), constraint_axis=(False, True, False), constraint_orientation='GLOBAL', mirror=False, proportional='ENABLED', proportional_edit_falloff='SMOOTH', proportional_size=1)
                     bpy.ops.transform.rotate(value=-1.5708, axis=(1, 0, 0), constraint_axis=(True, False, False), constraint_orientation='GLOBAL', mirror=False, proportional='ENABLED', proportional_edit_falloff='SMOOTH', proportional_size=1)
                 if cube["O"] == 18:
-                     
-                    useless=0
+                	pass     
                 if cube["O"] == 19:
-                     
                     bpy.ops.transform.rotate(value=3.14159, axis=(1, 0, 0), constraint_axis=(True, False, False), constraint_orientation='GLOBAL', mirror=False, proportional='ENABLED', proportional_edit_falloff='SMOOTH', proportional_size=1)
                 if cube["O"] == 20:
                      
@@ -194,7 +188,7 @@ def build(cubeDataHex, colourDataHex, cubeCount, cubedatabase):
                         if cube["Colour"]== 0  : newMaterial.diffuse_color=(1.0 ,1.0 ,1.0)         # White
                         if cube["Colour"]== 6  : newMaterial.diffuse_color=(0.992 ,0.867 ,0.098)   # Yellow
                         newMaterial.specular_color=newMaterial.diffuse_color              # make the specular colour the same as the diffuse colour
-                        newMaterial.name=textureandcolour                            # assign it a consistant nam
+                        newMaterial.name=textureandcolour                         
                         coloursinuse.append(textureandcolour)
                 newcube.active_material=bpy.data.materials[textureandcolour]
             else:

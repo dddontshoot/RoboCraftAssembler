@@ -4,7 +4,6 @@ import csv
 
 
 def parseBotFile(botfile):
-
     if botfile[len(botfile) - 4: len(botfile)] == ".bot":
         file = open(botfile, "r")
         bot = json.loads(file.read())
@@ -30,7 +29,6 @@ def parseBotFile(botfile):
 
 def parseCSVFile(csvfile):
     cubedatabase = dict()
-
     with open(csvfile) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
@@ -66,8 +64,8 @@ def getCubeData(cubeData, colourData, index):
         h4 = cubeData[6:8]
 
         cubeCount = (int(h1, 16) + (256 * int(h2, 16)) + (256 * 256 * int(h3, 16)) + (256 * 256 * 256 * int(h4, 16)))
-
         return(cubeCount)
+
     else:
         marker = 8+(index*16)
         output = dict()

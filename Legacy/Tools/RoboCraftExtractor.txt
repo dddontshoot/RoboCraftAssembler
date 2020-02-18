@@ -1,0 +1,59 @@
+Extra Tools:
+
+Here are some of the tools I used to decode the bot files and build the blender script.
+
+ColourList.ods          Lists all 32 colours and their index codes.
+Orientationlist.ods     Lists all 24 orientations and their index codes.
+Orientation.jpg         Screenshot of every possible orientation
+XYZorigin.jpg           Screenshot showing the Origin in the back left bottom corner.
+RoboCraftExtractor.txt  This file
+RoboCraftDecoder.ods    The spreadsheet I used to decode the bot file.
+RoboCraftExtractor.py   This program will extract the Base64 data and convert it into meaningful hexadecimal.
+
+
+
+
+How to use RoboCraftExtractor.py
+
+simple instructions:
+1) put RoboCraftExtractor.py into the folder with all your .bot files.
+2) type:
+python3 RoboCraft-extractor.py
+
+The program will open every .bot file in the folder, extract the Base64 data, convert it into hexadecimal and output to a csv file (called output.csv).
+
+3) open the spreadsheet file RoboCraftDecoder.ods
+4) copy the cubeData of one bot from the csv file and paste into cell BE2
+5) copy the colourData of one bot from the csv file and paste into cell BE3
+6) you will probably have to fill down the formulars because I only made it big enough to fit my bot.
+7) Sit back and stare blankly at the reams of data in front of you.
+
+
+
+
+How to read the spreadsheet:
+Each cube on your bot needs 6 pieces of information to identify it
+1) cube ID - this tells us what kind of cube it is; T1-Medium-Cube, T5-Compact-Cube, T3-Strut-Long, whatever
+2, 3, and 4) xzy coordinates - location on the bay
+5) Orientation - Which way up is the cube? For T1-Cube-Medium, T1-Cube-Heavy, T1-Cube-Light, and T5-Cube-Compact, it doesn't make much difference when you look at your bot in the bay, because the cubes are the same shape which ever way up they are. But things like Lasers, and Electroshields need to be oriented up the correct way.
+6) Colour
+
+You can read them as follows:
+1) Cube ID, Column X in the spreadsheet. In the example of TheDistractingCicada.bot the first cube on the list is 227205318 (ignore the data header 69 00 00 00 it tells us the total number of cubes in the bot)
+   If you look up that number in the cubeID you'll find that it's a T1-Cube-Medium
+
+   xyz coordinates. These can be read from columns AF, AG, and AH.
+   origin is at the back left of the bay (see screenshot)
+2) column AF has the X co-ordinate, higher values place the cube further to the right
+3) column AG has the Z co-ordinate, higher values place the cube further to the top
+4) column AH has the Y co-ordinate, higher values are placed further forward.
+
+5) Orientation is in column AI, see the orientation list and the screenshot for examples of lasers in 24 different orientations (6 faces x 4 directions)
+6) Colour of each cube is in column AW. To find the colour of cube at co-ordinates X32, Z10, Y25 go to columns AX, AY, AZ (hows that for confusing!) you'll see that the colour of the cube is 6 which can be looked up in the colourlist as Yellow.
+   Please note that in the example the cells for XZY co-ordinates can be found in both AF,AG,AH and AX,AY,AZ and are identical.
+   That means it will be easy to match the ID of cube in cell X22 for example with the colour of the cube in cell AW22 because they are on the same line.
+   This may be a coincidence, the same pattern has occured with the small handful of bots that I've been working with, but it may not always be the case. You should always check that the XZY co-ordinates match both pairs of data.
+
+
+Goodnight everyone, and happy gaming
+- dddontshoot

@@ -1,31 +1,50 @@
+#RoboCraftAssembler0.3.5
+# Will accept command line arguments. Even tho' the default cube is still being stubborn
+# work around is to open a blank blender file.
+#
+# example command line:
+#blender blank.blend --python assembler.py -- TheDistractingCicada.bot
+#                                            ^ yes, there needs to be a space here!
+#                                          ^ a double dash tells blender to pass all the following arguments to python
+
+
+
+
+
+###################################
+# Type your robots filename here: #
+###################################
+botfile="TheDistractingCicada.bot"
+#botfile="Tester.RC14"
+
+
+
+
+# Standard modules:
+import bpy
+import json
 import sys
-if sys.version_info < (3, 0):
-    print("Sorry, Robocraft Assembler requires Python 3.x")
-    sys.exit(1)
-
-try:
-    import bpy
-except ImportError:
-    print("\nRobocraft Assembler needs to be ran inside blender, "
-          "try invoking with blender --python " + sys.argv[0] + "\n")
-
-try:
-    import json
-    import pathlib
-except ImportError:
-    print("\nRobocraft Assembler is missing dependencies! Try running: "
-          "pip install -r requirements.txt \n")
-
+import pathlib
 sys.path.append(str(pathlib.Path().absolute()))
-import lib.blender
-import lib.parser
 
 
-DEFAULT_BOT_FILE = "TheDistractingCicada.bot"
-if "--" in sys.argv:
-    botfile = sys.argv[sys.argv.index("--") + 1:].pop(0)
-else:
-    botfile = DEFAULT_BOT_FILE
+# Custom modules:
+import unselecteverything
+import getbotfile
+import getdatabase
+import getcube
+
+
+# Command line support:
+argv = sys.argv
+if "--" in argv:
+    botfile = argv[argv.index("--") + 1:].pop(0)
+
+
+
+
+
+
 
 
 
@@ -38,30 +57,56 @@ def makeitso(cubeDataHex,colourDataHex,cubeCount,cubedatabase):
     coloursinuse=list()
 
     for x in range(0,cubeCount):
-        if x/100-int(x/100)==0 and x > 0: 
+
+        if x/100-int(x/100)==0 and x > 0: # this is a cute little routine to display a progress message every hundred cubes
             percentage_completed=int((x/cubeCount)*100)
             print(percentage_completed,"% complete")
-        cube = lib.parser.getCubeData(cubeDataHex,colourDataHex,x)
+
+        # pull all the data relating to the current cube.
+        cube=getcube.go(cubeDataHex,colourDataHex,x)
+        
+        # The database contains all the ID's that have been identified.
+        # A known ID number that hasn't been extracted yet will be listed in the csv file, but will point to a substitution file. Probably Spotter-Mace-0.blend
+        # An unidentified ID will not be listed in the csv file, and will be substituted with the file Spotter-Mace-2.blend
+        # so...
+        # ID=227205318 (T1 Medium cube) is given the name of "227205318". Simple right?
+        # ID=93493287 (hypothetical number) is given the name of "#93493287"
+        #                                   and ID is changed to "Spotter-Mace-0000"
 
         if cube["ID"] not in cubedatabase:
+            # Unidentified ID found
             if cube["ID"] not in unknowncube :
                 print("Replacing cube",cube["ID"],"with Spotter-Mace-0000")
                 unknowncube.append(cube["ID"])
+            # I'm about to change the cube["ID"], but I want the name of the cube to stay the same, also I'm putting a hash symbol in front
+            # so that I know it was replaced. This system is very useful for identifying the ID number for that cosmetic part I've never seen before.
             cube["name"]="#"+cube["ID"]
-            cube["ID"]="Spotter-Mace-0000" 
+            #cube["ID"]="227205318" # T1-Cube-Medium
+            cube["ID"]="Spotter-Mace-0000"  # There should be a line in the csv file that matches the ID "Spotter-Mace-0000" with a substitution file. Probably Spotter-Mace-1.blend 
+            #                                # (the one with the rediculious long spikes that you can see a mile away)
+            #                                # This is new for version 0.3.2 and does not exist in 0.3
         else:
             cube["name"]=cube["ID"]
 
+        # go and get the details from the database
         if not cube["ID"] in cubedatabase:
             print("\nError: cannot find ID#",cube["ID"],"in cubes.csv\n")
+            # so... not being able to find an ID# in the csv file doesn't usually cause an error. It just means that you've stumbled upon an unidentified cube,
+            # and RoboCraftAssembler will substitute it with the Spotter-Mace. However, if the Spotter-Mace is not in the csv file, then it will cause an error.
+            # ID Number: Spotter-Mace-0000
+            # file: Spotter-Mace-1.blend or Spotter-Mace-2.blend or what ever your favourite shape is.
         cubeimportdetails=json.loads(cubedatabase[cube["ID"]])
         objectlist=json.loads(cubeimportdetails["object"]) # This list tells me which objects I want to import from the library.
         
+        #fullpath = "/Robocraft/Blender/"+cubeimportdetails["blendfile"] 
+        #with bpy.data.libraries.load( fullpath  ) as (data_from,data_to):  # use these two lines to inport every object in the library
+        #    objectlist=data_from.objects   # get a list of objects in the library. Ill import them seperately
 
         section="\\Object\\"
         
         filepath  = cubeimportdetails["blendfile"] + section + cubeimportdetails["object"]
         directory = cubeimportdetails["blendfile"] + section
+        #filename  = json.loads(cubeimportdetails["object"]
 
         for filename in objectlist: # filename is a string. it is the name of the object we're importing from the library.
             if "ColourOveride" in filename:     # some objects are always the same colour eg. the back of the electroshield is always grey.
@@ -94,7 +139,7 @@ def makeitso(cubeDataHex,colourDataHex,cubeCount,cubedatabase):
             
             # now we duplicate it, and move it to the correct location.
             # duplicating works on selected objects, so I have to make sure I unselect everything first.
-            lib.blender.unselectEverything() 
+            unselecteverything.go()
 
             bpy.data.objects.get(datum).select=True
             bpy.ops.object.duplicate(linked=True) # works perfectly. If the cube has more than one part, the previous for loop handles each object seperately.
@@ -273,21 +318,80 @@ def makeitso(cubeDataHex,colourDataHex,cubeCount,cubedatabase):
                 # If I had no objects selected after the duplication process, then something went wrong.
                 print("error, object ",cube["ID"],"didn't import properly")
 
+            # This is the end of the object we were working on.
+            # If there is another object in the cube, then we'll import that one now
+            # if not, move on to the next cube
+
+        # This is the end of all the objects in the cube. Lets move on to another cube.
+
+    # This is the end of all the cubes. There are no more cubes to import.
+
+    # I should put the colour assignment in here because it protects against unexpected changes in the data,
+    # but I'm to lazy to write all the code for it, so I'll just put the colour assignment in with the cubeData loop.
+    #It'll probably work. I'm sure the data will be consistant. I doubt it'll go wrong, The chance of it happening are pretty slim...
+    #marker=8
+    #for x in range(1,cubeCount):
+    #    cube["Colour"]=int(colourDataHex[marker:marker+2],16)
+    #    colourData_X=int(colourDataHex[marker+2:marker+4],16)
+    #    colourData_Z=int(colourDataHex[marker+4:marker+6],16)
+    #    colourData_Y=int(colourDataHex[marker+6:marker+8],16)
+
+    # Finally, remove the leftovers
     print("removing",len(cubesinuse),"datums now...")
-    lib.blender.unselectEverything() 
+    unselecteverything.go()
     for obj in cubesinuse:
         bpy.data.objects[obj].select=True
         bpy.ops.object.delete()
 
 
+
+
+
+###########################################################################################################################################################
+# Main ####################################################################################################################################################
+###########################################################################################################################################################
+
 def main(botfile):
-    lib.blender.unselectEverything()
-    print("\nNow building" + botfile + "...")
-    cubeDataHex, colourDataHex, cubeCount = lib.parser.parseBotFile(botfile)
-    cubedatabase = lib.parser.parseCSVFile("cubes.csv")
-    makeitso(cubeDataHex, colourDataHex, cubeCount, cubedatabase)
+
+    ####################################################################
+    # Lets _TRY_ and prevent the default cube from contaminating our bot
+    ####################################################################
+
+
+    unselecteverything.go() # lets unselect everything so that we don't get any pre-existing cubes duplicated
+
+    
+    #########################################################
+    # open the .bot file and look for cubeData and colourData
+    #########################################################
+    
+    
+    print("\nNow building",botfile,"...")
+    
+    cubeDataHex,colourDataHex,cubeCount=getbotfile.go(botfile)
+    
+    
+    ##############################################
+    # Now open the csv file with the list of cubes
+    ##############################################
+    
+    
+    cubedatabase=getdatabase.go("cubes.csv")
+    
+    
+    #################################################
+    # We have all the resources, lets go make a robot
+    #################################################
+    
+    
+    makeitso(cubeDataHex,colourDataHex,cubeCount,cubedatabase)
+    
+    
+    ##################
+    # That's all folks
+    ##################
+    
+    
     print("done!")
-
-
-if __name__ == "__main__":
-    main(botfile)
+    
+#main(botfile)

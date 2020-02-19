@@ -66,10 +66,10 @@ Which is why we're working on this RoboCraftAssembler project, once you have you
 
 # And here's what you need to know to do it:
 ### Version 0.3.5
-1) Download your bot file, put it in the same folder as the RoboCraftAssembler
+1) Download your bot file, put it in the subfolder called bot.
 
 2) Run it using the command line:
-   blender --python assembler.py -- TheDistractingCicada.bot
+   blender --python assembler.py -- bot/TheDistractingCicada.bot
    
 ~~It's that simple!~~ Actually, it fails if you have built your bot using multi part cubes like wings or shields.
 The code still works perfectly when executed from inside blender, but only basic cubes work from the command line.
@@ -80,35 +80,8 @@ import sys
 import pathlib
 sys.path.append(str(pathlib.Path().absolute()))
 from assembler import main
-main("TheDistractingCicada.bot")
+main("bots/TheDistractingCicada.bot")
 ```
-### Version 0.3.2 and 0.3.3
-1) Open a blank Blender document
-
-2) Find the text editor inside blender, and use it to open RoboCraftAssembler0.3.3.py
-
-3) Change line 12 to match the filename of your bot.
-
-4) hit "run script". This can take anything from a few seconds to just over a minute. If you're using linux, it will display a progress report in the terminal.
-
-5) finally, blender gets confused when importing external textures. So click on file > External Data > Find Missing Files and point it to the subfolder called "Textures"
-
-
-### Version 0.3
-1) once you have downloaded your bot file, put it in the same folder as the RoboCraftAssembler
-
-2) open RoboCraftAssembler0.3.blend in blender
-
-3) find the main script called "gobuild"
-
-4) change line 12 to match the filename of your bot
-
-5) hit "run script". This can take anything from a few seconds to just over a minute. If you're using linux, it will display a progress report in the terminal.
-
-6) finally, blender gets confused when importing external textures. So click on file > External Data > Find Missing Files and point it to the subfolder called "Textures"
-
-
-
 
 
 ## Notes regarding cubes

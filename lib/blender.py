@@ -4,8 +4,7 @@ import json
 import pathlib
 
 sys.path.append(str(pathlib.Path().absolute()))
-import lib.parser
-
+from lib import parser
 
 def unselectEverything():
     selected = bpy.context.selected_objects
@@ -23,7 +22,7 @@ def build(cubeDataHex, colourDataHex, cubeCount, cubedatabase):
         if (x / 100 - int(x/100) == 0) and (x > 0):
             percentage_completed = int((x / cubeCount) * 100)
             print(percentage_completed, "% complete")
-        cube = lib.parser.getCubeData(cubeDataHex, colourDataHex, x)
+        cube = parser.getCubeData(cubeDataHex, colourDataHex, x)
 
         if cube["ID"] not in cubedatabase:
             if cube["ID"] not in unknowncube:

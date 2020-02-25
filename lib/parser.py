@@ -12,6 +12,7 @@ def parseBotFile(botfile):
         bot["cubeDataHex"] = bot["cubeDataDecoded"].hex()
         bot["colourDataDecoded"] = base64.b64decode(bot["colourData"])
         bot["colourDataHex"] = bot["colourDataDecoded"].hex()
+
     else:
         file = open(botfile, "r")
         bot["cubeDataHex"] = file.readline()

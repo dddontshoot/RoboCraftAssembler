@@ -19,15 +19,16 @@ sys.path.append(str(pathlib.Path().absolute()))
 from lib import blender, parser, arguments
 
 
-def main(botfile):
-    blender.unselectEverything()
-    print("\nNow building" + botfile + "...")
-    cubeDataHex, colourDataHex, cubeCount = parser.parseBotFile(botfile)
-    cubedatabase = parser.parseCSVFile("cubes.csv")
-    blender.build(cubeDataHex, colourDataHex, cubeCount, cubedatabase)
-    print("done!")
+class Program():
+    def __init__(self):
+        self.botfile = arguments.getBotFile()
+        blender.unselectEverything()
+        print("\nNow building " + self.botfile + "...")
+        cubeDataHex, colourDataHex, cubeCount = parser.parseBotFile(self.botfile)
+        self.cubedatabase = parser.parseCSVFile("cubes.csv")
+        blender.build(cubeDataHex, colourDataHex, cubeCount, self.cubedatabase)
+        print("done!")
 
 
 if __name__ == "__main__":
-    botfile = arguments.getBotFile()
-    main(botfile)
+    main = Program()

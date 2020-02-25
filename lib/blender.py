@@ -6,6 +6,7 @@ import pathlib
 sys.path.append(str(pathlib.Path().absolute()))
 from lib import parser
 
+
 def unselectEverything():
     selected = bpy.context.selected_objects
     if len(selected) > 0:

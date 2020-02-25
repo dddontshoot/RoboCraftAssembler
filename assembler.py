@@ -16,20 +16,18 @@ except ImportError:
           "pip install -r requirements.txt \n")
 
 sys.path.append(str(pathlib.Path().absolute()))
-import lib.blender
-import lib.parser
-import lib.arguments
+from lib import blender, parser, arguments
 
 
 def main(botfile):
-    lib.blender.unselectEverything()
+    blender.unselectEverything()
     print("\nNow building" + botfile + "...")
-    cubeDataHex, colourDataHex, cubeCount = lib.parser.parseBotFile(botfile)
-    cubedatabase = lib.parser.parseCSVFile("cubes.csv")
-    lib.blender.build(cubeDataHex, colourDataHex, cubeCount, cubedatabase)
+    cubeDataHex, colourDataHex, cubeCount = parser.parseBotFile(botfile)
+    cubedatabase = parser.parseCSVFile("cubes.csv")
+    blender.build(cubeDataHex, colourDataHex, cubeCount, cubedatabase)
     print("done!")
 
 
 if __name__ == "__main__":
-    botfile = lib.arguments.getBotFile()
+    botfile = arguments.getBotFile()
     main(botfile)

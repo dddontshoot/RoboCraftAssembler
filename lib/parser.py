@@ -8,7 +8,6 @@ class Parser():
     def __init__(self):
         pass
 
-
     def parseBotFile(self, botfile):
         if botfile[len(botfile) - 4: len(botfile)] == ".bot":
             file = open(botfile, "r")
@@ -39,8 +38,6 @@ class Parser():
 
         return cubeData
 #        return(bot["cubeDataHex"], bot["colourDataHex"], cubeCount)
-        
-
 
     def parseCSVFile(self, csvfile):
         cubedatabase = dict()
@@ -68,7 +65,6 @@ class Parser():
                     cubedatabase[cubeID] = json.dumps(cubeimportdetails)
 
         return(cubedatabase)
-
 
     def getCubeData(self, cubeData, colourData, index):
         if index == -1:

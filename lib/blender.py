@@ -8,9 +8,6 @@ except ImportError:
     print("\nRobocraft Assembler needs to be ran inside blender, "
           "try invoking with blender --python " + sys.argv[0] + "\n")
 
-
-
-
 sys.path.append(str(pathlib.Path().absolute()))
 from lib.parser import Parser
 

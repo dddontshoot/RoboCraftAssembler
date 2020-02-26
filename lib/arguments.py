@@ -1,9 +1,7 @@
 from sys import argv
 
 
-
 class Arguments():
-
 
     def __init__(self):
         pass

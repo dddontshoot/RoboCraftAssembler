@@ -4,13 +4,11 @@ if sys.version_info < (3, 0):
     print("Sorry, Robocraft Assembler requires Python 3.x")
     sys.exit(1)
 
-
 try:
     import pathlib
 except ImportError:
     print("\nRobocraft Assembler is missing dependencies! Try running: "
           "pip install -r requirements.txt \n")
-
 
 sys.path.append(str(pathlib.Path().absolute()))
 from lib.arguments import Arguments

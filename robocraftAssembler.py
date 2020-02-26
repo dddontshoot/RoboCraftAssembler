@@ -17,6 +17,7 @@ from lib.parser import Parser
 
 
 class Program():
+
     def __init__(self):
         self.arguments = Arguments()
         self.blender = Blender()
@@ -26,7 +27,7 @@ class Program():
         self.blender.unselectEverything()
         print("\nNow building " + self.botfile + "...")
         self.cubeData = self.parser.parseBotFile(self.botfile)
-        self.cubedatabase = self.parser.parseCSVFile("cubes.csv")
+        self.cubedatabase = self.parser.parseCSVFile("assets/cubes.csv")
         self.blender.build(self.cubeData, self.cubedatabase)
         print("done!")
 

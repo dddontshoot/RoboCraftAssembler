@@ -13,4 +13,3 @@ class Arguments():
         else:
             botfile = DEFAULT_BOT_FILE
         return botfile
-

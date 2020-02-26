@@ -14,10 +14,8 @@ from lib.parser import Parser
 
 class Blender():
 
-
     def __init__(self):
         pass
-
 
     def unselectEverything(self):
         selected = bpy.context.selected_objects
@@ -25,6 +23,10 @@ class Blender():
             for obj in selected:
                 obj.select = False
 
+    def displayPercentageCompleted(self, x, cubeCount):
+        if (x / 100 - int(x / 100) == 0) and (x > 0):
+            percentage_completed = int((x / cubeCount) * 100)
+            print(percentage_completed, "% complete")
 
     def deleteCubes(self, cubesinuse):
         print("Removing " + str(len(cubesinuse)) + " datums now...")
@@ -32,18 +34,14 @@ class Blender():
             bpy.data.objects[obj].select = True
             bpy.ops.object.delete()
 
-
-
     def build(self, cubeData, cubedatabase):
         unknowncube = list()
         cubesinuse = list()
         coloursinuse = list()
 
         for x in range(0, cubeData["cubeCount"]):
-            if (x / 100 - int(x/100) == 0) and (x > 0):
-                percentage_completed = int((x / cubeData["cubeCount"]) * 100)
-                print(percentage_completed, "% complete")
             self.parser = Parser()
+            self.displayPercentageCompleted(x, cubeData["cubeCount"])
             cube = self.parser.getCubeData(cubeData["cubeHex"], cubeData["colourHex"], x)
 
             if cube["ID"] not in cubedatabase:
@@ -60,7 +58,7 @@ class Blender():
             cubeimportdetails = json.loads(cubedatabase[cube["ID"]])
             objectlist = json.loads(cubeimportdetails["object"]) 
             section = "\\Object\\"
-            cubeimportdetails["blendfile"] = "blend/" + cubeimportdetails["blendfile"]
+            cubeimportdetails["blendfile"] = "assets/blends/" + cubeimportdetails["blendfile"]
             filepath = cubeimportdetails["blendfile"] + section + cubeimportdetails["object"]
             directory = cubeimportdetails["blendfile"] + section
             
@@ -183,7 +181,7 @@ class Blender():
                     textureandcolour=str(datum)+"."+str(colourOveride) 
                     if textureandcolour not in coloursinuse: 
 
-                            newMaterial=bpy.data.objects[datum].active_material.copy()
+                            newMaterial = bpy.data.objects[datum].active_material.copy()
                             if colourOveride == 20 : newMaterial.diffuse_color=(1.0 ,0.683 ,0.107)     # Birch
                             if colourOveride == 4  : newMaterial.diffuse_color=(0.02 ,0.02 ,0.02)      # Black
                             if colourOveride == 23 : newMaterial.diffuse_color=(0.055 ,0.052 ,0.077)   # Blue01
@@ -216,13 +214,12 @@ class Blender():
                             if colourOveride == 5  : newMaterial.diffuse_color=(0.448 ,0.008 ,0.007)   # Red
                             if colourOveride == 0  : newMaterial.diffuse_color=(1.0 ,1.0 ,1.0)         # White
                             if colourOveride == 6  : newMaterial.diffuse_color=(0.992 ,0.867 ,0.098)   # Yellow
-                            newMaterial.specular_color=newMaterial.diffuse_color              # make the specular colour the same as the diffuse colour
-                            newMaterial.name=textureandcolour                         
+                            newMaterial.specular_color = newMaterial.diffuse_color              # make the specular colour the same as the diffuse colour
+                            newMaterial.name = textureandcolour                         
                             coloursinuse.append(textureandcolour)
-                    newcube.active_material=bpy.data.materials[textureandcolour]
+                    newcube.active_material = bpy.data.materials[textureandcolour]
                 else:
                    
                     print("error, object ", cube["ID"], "didn't import properly")
-
 
         self.deleteCubes(cubesinuse)

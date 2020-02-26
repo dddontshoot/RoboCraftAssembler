@@ -1,13 +1,9 @@
 import sys
+
 if sys.version_info < (3, 0):
     print("Sorry, Robocraft Assembler requires Python 3.x")
     sys.exit(1)
 
-try:
-    import bpy
-except ImportError:
-    print("\nRobocraft Assembler needs to be ran inside blender, "
-          "try invoking with blender --python " + sys.argv[0] + "\n")
 
 try:
     import pathlib
@@ -15,18 +11,25 @@ except ImportError:
     print("\nRobocraft Assembler is missing dependencies! Try running: "
           "pip install -r requirements.txt \n")
 
+
 sys.path.append(str(pathlib.Path().absolute()))
-from lib import blender, parser, arguments
+from lib.arguments import Arguments
+from lib.blender import Blender
+from lib.parser import Parser
 
 
 class Program():
     def __init__(self):
-        self.botfile = arguments.getBotFile()
-        blender.unselectEverything()
+        self.arguments = Arguments()
+        self.blender = Blender()
+        self.parser = Parser()
+
+        self.botfile = self.arguments.getBotFile()
+        self.blender.unselectEverything()
         print("\nNow building " + self.botfile + "...")
-        cubeDataHex, colourDataHex, cubeCount = parser.parseBotFile(self.botfile)
-        self.cubedatabase = parser.parseCSVFile("cubes.csv")
-        blender.build(cubeDataHex, colourDataHex, cubeCount, self.cubedatabase)
+        self.cubeData = self.parser.parseBotFile(self.botfile)
+        self.cubedatabase = self.parser.parseCSVFile("cubes.csv")
+        self.blender.build(self.cubeData, self.cubedatabase)
         print("done!")
 
 

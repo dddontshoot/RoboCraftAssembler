@@ -125,7 +125,7 @@ class Blender():
                         constraint_axis=(True, False, False), 
                         constraint_orientation='GLOBAL', 
                         mirror=False, 
-                        proportional='ENABLED', 
+                        proportional='DISABLED', 
                         proportional_edit_falloff='SMOOTH', 
                         proportional_size=1)
 
@@ -135,7 +135,7 @@ class Blender():
                         constraint_axis=(False, True, False), 
                         constraint_orientation='GLOBAL', 
                         mirror=False, 
-                        proportional='ENABLED', 
+                        proportional='DISABLED', 
                         proportional_edit_falloff='SMOOTH', 
                         proportional_size=1)
 
@@ -145,7 +145,7 @@ class Blender():
                         constraint_axis=(False, False, True), 
                         constraint_orientation='GLOBAL', 
                         mirror=False, 
-                        proportional='ENABLED', 
+                        proportional='DISABLED', 
                         proportional_edit_falloff='SMOOTH', 
                         proportional_size=1)
 

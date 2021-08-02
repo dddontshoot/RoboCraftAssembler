@@ -19,7 +19,7 @@ orientations : dict = {
     2:	( 0,   pi, -hpi),
     3:	(-hpi, hpi, 0  ),
     4:	( 0,   0,   pi ),
-    5:	(-hpi, pi,  0  ),
+    5:	( hpi, pi,  0  ),
     6:	( 0,   hpi, 0  ),
     7:	( hpi, 0,   pi ),
     8:	( hpi, 0,   0  ),
@@ -34,10 +34,10 @@ orientations : dict = {
     17:	(-hpi,-hpi, 0  ),
     18:	( 0,   0,   0  ),
     19:	( pi,  0,   0  ),
-    20:	(-hpi, hpi, 0  ),
+    20:	(-hpi, 0,  -hpi),
     21:	( hpi, 0,   hpi),
     22:	( hpi, 0,  -hpi),
-    23:	(-hpi, hpi, 0  )
+    23:	(-hpi, 0,   hpi)
 }
 
 class Blender():
@@ -120,9 +120,9 @@ class Blender():
                     newcube.material_slots[0].link = 'OBJECT' 
 
                     bpy.ops.transform.rotate(
-                        value=orientations[cube['O']][0], 
-                        axis=(1, 0, 0), 
-                        constraint_axis=(True, False, False), 
+                        value=orientations[cube['O']][2], 
+                        axis=(0, 0, 1), 
+                        constraint_axis=(False, False, True), 
                         constraint_orientation='GLOBAL', 
                         mirror=False, 
                         proportional='DISABLED', 
@@ -140,9 +140,9 @@ class Blender():
                         proportional_size=1)
 
                     bpy.ops.transform.rotate(
-                        value=orientations[cube['O']][2], 
-                        axis=(0, 0, 1), 
-                        constraint_axis=(False, False, True), 
+                        value=orientations[cube['O']][0], 
+                        axis=(1, 0, 0), 
+                        constraint_axis=(True, False, False), 
                         constraint_orientation='GLOBAL', 
                         mirror=False, 
                         proportional='DISABLED', 

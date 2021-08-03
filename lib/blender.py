@@ -12,8 +12,8 @@ sys.path.append(str(pathlib.Path().absolute()))
 from lib.parser import Parser
 
 from math import pi
-hpi : float = pi/2
-orientations : dict = {
+hpi = float(pi/2)
+orientations = {
     0:	( 0,   0,  -hpi),
     1:	( hpi,-hpi, 0  ),
     2:	( 0,   pi, -hpi),

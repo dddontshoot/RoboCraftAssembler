@@ -62,7 +62,10 @@ class Parser():
                         if (x == 0):
                             cubeimportdetails["cubename"] = item
                             if cubeimportdetails["cubename"][0:1] == "#":
-                                remark="#"
+                                remark = "#"
+                            else:
+                                remark = ""
+                                cubeimportdetails["path"] = ""
                         if (x == 1): 
                             cubeimportdetails["cubeID"] = item
                             cubeID = item

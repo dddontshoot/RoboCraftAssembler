@@ -42,25 +42,54 @@ class Parser():
         cubedatabase = dict()
         with open(csvfile) as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
+            firstTime=1
             for row in csv_reader:
                 cubeimportdetails = dict()
                 objectlist = list()
                 cubeID = "#" 
                 x = 0
                 for item in row:
-                    if (x == 0):
-                        cubeimportdetails["cubename"] = item
-                    if (x == 1): 
-                        cubeimportdetails["cubeID"] = item
-                        cubeID = item
-                    if (x == 2):
-                        cubeimportdetails["blendfile"] = item
-                    if (x > 2): 
-                        objectlist.append(item)
-                    x = (x + 1)
+                    if ( firstTime == (1)):
+                        firstTime=0
+                        if item == "# csv_version=2":
+                            print("identified csv version 2")
+                            csv_version=2
+                        else:
+                            print("identified csv version 1")
+                            csv_version=1
 
-                cubeimportdetails["object"] = json.dumps(objectlist)
-                if cubeimportdetails["cubename"][0:1] != "#":
+                    if csv_version==1:
+                        if (x == 0):
+                            cubeimportdetails["cubename"] = item
+                            if cubeimportdetails["cubename"][0:1] == "#":
+                                remark="#"
+                        if (x == 1): 
+                            cubeimportdetails["cubeID"] = item
+                            cubeID = item
+                        if (x == 2):
+                            cubeimportdetails["blendfile"] = item
+                        if (x > 2): 
+                            objectlist.append(item)
+
+                    if csv_version==2:
+                        if (x == 0):
+                            remark = item # First column is only for remark character "#".
+                        if (x == 1):
+                            cubeimportdetails["cubename"] = item
+                        if (x == 2):
+                            cubeimportdetails["cubeID"] = item
+                            cubeID = item
+                        if (x == 3):
+                            cubeimportdetails["path"] = item
+                        if (x == 4):
+                            cubeimportdetails["blendfile"] = item
+                        if (x > 4): 
+                            if len(item)>0:
+                                objectlist.append(item)
+                    x = (x + 1)
+                if remark[0:1] != "#":
+                    cubeimportdetails["blendfile"] = cubeimportdetails["path"]+cubeimportdetails["blendfile"]
+                    cubeimportdetails["object"] = json.dumps(objectlist)
                     cubedatabase[cubeID] = json.dumps(cubeimportdetails)
 
         return(cubedatabase)

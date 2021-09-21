@@ -14,6 +14,7 @@ These tools can be used to
 ## Requirements:
 
 Blender - I'm using 2.7.9b (https://download.blender.org/release/Blender2.79)
+(But I edited the 2021.09 files in Blender 2.93)
 
 Python - I'm using 3.6.8
 
@@ -24,6 +25,13 @@ For context, I tested this on my laptop which uses blender 2.7.6 and python 3.5.
 
 
 ## List of improvements:
+
+### 2021.09
+- Two columns have been added to the CSV file (Remark, and Path)
+- Complete set of meshes (no tuextures) that were assembled manually
+
+### 2021.08
+- Simplified the code that handles rotations
 
 ### 0.3.5
 - Command line support ~~(even tho' we still haven't figured out the best way to stop the default cube from contaminating our bots)~~ Solved it!
@@ -65,32 +73,17 @@ Which is why we're working on this RoboCraftAssembler project, once you have you
 
 
 # And here's what you need to know to do it:
-### Version 0.3.5
+### Version 2021.09
 1) Download your bot file, put it in the subfolder called bot.
 
 2) Run it using the command line:
-   blender --python assembler.py -- bot/TheDistractingCicada.bot
+   blender --python robocraftAssembler.py -- bot/TheDistractingCicada.bot
    
-~~It's that simple!~~ Actually, it fails if you have built your bot using multi part cubes like wings or shields.
-The code still works perfectly when executed from inside blender, but only basic cubes work from the command line.
-
-So.. open a blank blender file, create a new text file inside it that looks like this:
-```
-import sys
-import pathlib
-sys.path.append(str(pathlib.Path().absolute()))
-from assembler import main
-main("bots/TheDistractingCicada.bot")
-```
-
 
 ## Notes regarding cubes
-At the moment we're still extracting all the complex 3D models for each cube type.
-We did all the basic ones first, T1-Medium-Cube, T1-Edge-Medium, etc, but we still don't have any round cubes or and guns or wings or rotors or anything really cool like that.
-Just the basic cubes.
+The 2021.09 set was assembled manually in Blender 2.93, The program still runs fine with them, so I didn't notice until I had finished that you can't actually "open" then individual .blend files in Blender 2.79, but you can "append" them.
 
 Any cubes that aren't listed in the csv file will be substituted by Spotter-Mace-1.blend.
-The csv file does contain some substitutions. For example, there's no library for the T1 plasma, so the csv file points to a T1 Laser instead.
 
 The good news is that should you aquire some new 3D models, you (hopefully) won't have to change your code to include them, just update cubes.csv with the names of the new blend libraries and the RoboCraftAssembler will import them when you run the script.
 

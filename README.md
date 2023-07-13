@@ -78,7 +78,7 @@ Which is why we're working on this RoboCraftAssembler project, once you have you
 1) Download your bot file, put it in the subfolder called bot.
 
 2) Run it using the command line:
-   blender --python robocraftAssembler.py -- bot/TheDistractingCicada.bot
+   blender --python robocraftAssembler.py -- bots/TheDistractingCicada.bot
    
 
 ## Notes regarding cubes
